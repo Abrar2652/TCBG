@@ -1,0 +1,64 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+T3Former Traffic Fair | device=cuda | epochs=30 | seeds=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | lr=0.005 h=32 drop=0.3
+
+============================================================  pems04_binary
+  n=708  nc=2  sage_dim=24  betti=(708, 9, 4)  dos=(708, 9, 4)
+  seed=0  acc=96.89%
+  seed=1  acc=96.04%
+  seed=2  acc=95.90%
+  seed=3  acc=96.61%
+  seed=4  acc=94.91%
+  seed=5  acc=96.61%
+  seed=6  acc=94.21%
+  seed=7  acc=96.05%
+  seed=8  acc=95.34%
+  seed=9  acc=94.49%
+  T3Former Fair: 95.71% ± 0.88%  (paper 96.76%)
+
+============================================================  pems04_multi
+  n=708  nc=3  sage_dim=24  betti=(708, 9, 4)  dos=(708, 9, 4)
+  seed=0  acc=92.10%
+  seed=1  acc=88.42%
+  seed=2  acc=89.69%
+  seed=3  acc=89.54%
+  seed=4  acc=89.26%
+  seed=5  acc=88.84%
+  seed=6  acc=90.10%
+  seed=7  acc=90.39%
+  seed=8  acc=84.61%
+  seed=9  acc=92.22%
+  T3Former Fair: 89.52% ± 2.02%  (paper 92.66%)
+
+============================================================  pems08_binary
+  n=744  nc=2  sage_dim=24  betti=(744, 9, 4)  dos=(744, 9, 4)
+  seed=0  acc=95.97%
+  seed=1  acc=96.37%
+  seed=2  acc=94.49%
+  seed=3  acc=95.97%
+  seed=4  acc=95.16%
+  seed=5  acc=94.90%
+  seed=6  acc=95.97%
+  seed=7  acc=96.64%
+  seed=8  acc=94.63%
+  seed=9  acc=96.91%
+  T3Former Fair: 95.70% ± 0.81%  (paper 95.16%)
+
+============================================================  pems08_multi
+  n=744  nc=3  sage_dim=24  betti=(744, 9, 4)  dos=(744, 9, 4)
+  seed=0  acc=90.32%
+  seed=1  acc=91.93%
+  seed=2  acc=91.94%
+  seed=3  acc=90.73%
+  seed=4  acc=92.34%
+  seed=5  acc=88.58%
+  seed=6  acc=87.77%
+  seed=7  acc=90.73%
+  seed=8  acc=89.24%
+  seed=9  acc=91.53%
+  T3Former Fair: 90.51% ± 1.46%  (paper 89.65%)
+
+============================================================  pemsbay_binary
+  n=2171  nc=2  sage_dim=24  betti=(2171, 9, 4)  dos=(2171, 9, 4)
+  seed=0  acc=76.32%
+  seed=1  acc=65.77%

@@ -1,0 +1,48 @@
+# TCBG Social Network Configuration
+# Overrides for TUDataset temporal social graphs
+
+T_grid: 30
+K_grid: 20
+epsilon_lookback: auto   # = (t_max - t_min) / num_timesteps * 3
+hom_dim: [0, 1]
+min_persistence: 0.01
+
+gin_layers: 3
+gin_hidden: 64
+gin_dropout: 0.3
+
+batch_size: 32
+epochs: 200
+patience: 30
+lr: 0.001
+
+# Evaluation: 5-fold stratified CV, seed=42
+eval_protocol: kfold
+n_splits: 5
+seed: 42
+
+# Dataset-specific grids
+infectious:
+  T_grid: 30
+  K_grid: 20
+  num_timesteps: 48
+
+dblp:
+  T_grid: 30
+  K_grid: 20
+  num_timesteps: 46
+
+tumblr:
+  T_grid: 30
+  K_grid: 20
+  num_timesteps: 89
+
+mit:
+  T_grid: 30
+  K_grid: 20
+  num_timesteps: 5576
+
+highschool:
+  T_grid: 30
+  K_grid: 20
+  num_timesteps: 203

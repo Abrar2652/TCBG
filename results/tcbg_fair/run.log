@@ -1,0 +1,1208 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: infectious | Classes: 2
+
+Result: infectious | acc = 0.7050 +/- 0.0886
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/infectious_nc2_seed0.json
+
+=== seed=0 infectious @ 08:08:21 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: infectious | Classes: 2
+
+Result: infectious | acc = 0.6800 +/- 0.0367
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/infectious_nc2_seed1.json
+
+=== seed=1 infectious @ 08:09:05 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: infectious | Classes: 2
+
+Result: infectious | acc = 0.6350 +/- 0.0561
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/infectious_nc2_seed2.json
+
+=== seed=2 infectious @ 08:09:41 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: infectious | Classes: 2
+
+Result: infectious | acc = 0.6400 +/- 0.0436
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/infectious_nc2_seed3.json
+
+=== seed=3 infectious @ 08:10:24 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: infectious | Classes: 2
+
+Result: infectious | acc = 0.6600 +/- 0.0718
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/infectious_nc2_seed4.json
+
+=== seed=4 infectious @ 08:11:00 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: infectious | Classes: 2
+
+Result: infectious | acc = 0.6550 +/- 0.1005
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/infectious_nc2_seed5.json
+
+=== seed=5 infectious @ 08:11:45 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: infectious | Classes: 2
+
+Result: infectious | acc = 0.7050 +/- 0.0187
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/infectious_nc2_seed6.json
+
+=== seed=6 infectious @ 08:12:19 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: infectious | Classes: 2
+
+Result: infectious | acc = 0.7300 +/- 0.0430
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/infectious_nc2_seed7.json
+
+=== seed=7 infectious @ 08:13:06 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: infectious | Classes: 2
+
+Result: infectious | acc = 0.6950 +/- 0.0765
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/infectious_nc2_seed8.json
+
+=== seed=8 infectious @ 08:13:54 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: infectious | Classes: 2
+
+Result: infectious | acc = 0.6800 +/- 0.0872
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/infectious_nc2_seed9.json
+
+=== seed=9 infectious @ 08:14:43 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dblp | Classes: 2
+
+Result: dblp | acc = 0.9086 +/- 0.0088
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/dblp_nc2_seed0.json
+
+=== seed=0 dblp @ 08:15:22 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dblp | Classes: 2
+
+Result: dblp | acc = 0.8636 +/- 0.0136
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/dblp_nc2_seed1.json
+
+=== seed=1 dblp @ 08:16:51 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dblp | Classes: 2
+
+Result: dblp | acc = 0.8874 +/- 0.0168
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/dblp_nc2_seed2.json
+
+=== seed=2 dblp @ 08:17:59 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dblp | Classes: 2
+
+Result: dblp | acc = 0.8940 +/- 0.0209
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/dblp_nc2_seed3.json
+
+=== seed=3 dblp @ 08:19:43 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dblp | Classes: 2
+
+Result: dblp | acc = 0.8834 +/- 0.0344
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/dblp_nc2_seed4.json
+
+=== seed=4 dblp @ 08:21:05 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dblp | Classes: 2
+
+Result: dblp | acc = 0.9046 +/- 0.0190
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/dblp_nc2_seed5.json
+
+=== seed=5 dblp @ 08:22:30 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dblp | Classes: 2
+
+Result: dblp | acc = 0.9007 +/- 0.0183
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/dblp_nc2_seed6.json
+
+=== seed=6 dblp @ 08:23:53 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dblp | Classes: 2
+
+Result: dblp | acc = 0.9033 +/- 0.0123
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/dblp_nc2_seed7.json
+
+=== seed=7 dblp @ 08:25:21 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dblp | Classes: 2
+
+Result: dblp | acc = 0.8834 +/- 0.0412
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/dblp_nc2_seed8.json
+
+=== seed=8 dblp @ 08:26:46 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dblp | Classes: 2
+
+Result: dblp | acc = 0.8980 +/- 0.0267
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/dblp_nc2_seed9.json
+
+=== seed=9 dblp @ 08:28:19 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: tumblr | Classes: 2
+
+Result: tumblr | acc = 0.5603 +/- 0.0450
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/tumblr_nc2_seed0.json
+
+=== seed=0 tumblr @ 08:29:47 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: tumblr | Classes: 2
+
+Result: tumblr | acc = 0.5335 +/- 0.0263
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/tumblr_nc2_seed1.json
+
+=== seed=1 tumblr @ 08:30:33 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: tumblr | Classes: 2
+
+Result: tumblr | acc = 0.5682 +/- 0.0431
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/tumblr_nc2_seed2.json
+
+=== seed=2 tumblr @ 08:31:12 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: tumblr | Classes: 2
+
+Result: tumblr | acc = 0.5979 +/- 0.0483
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/tumblr_nc2_seed3.json
+
+=== seed=3 tumblr @ 08:32:01 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: tumblr | Classes: 2
+
+Result: tumblr | acc = 0.5763 +/- 0.0399
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/tumblr_nc2_seed4.json
+
+=== seed=4 tumblr @ 08:32:38 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: tumblr | Classes: 2
+
+Result: tumblr | acc = 0.5736 +/- 0.0249
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/tumblr_nc2_seed5.json
+
+=== seed=5 tumblr @ 08:33:20 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: tumblr | Classes: 2
+
+Result: tumblr | acc = 0.5848 +/- 0.0604
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/tumblr_nc2_seed6.json
+
+=== seed=6 tumblr @ 08:34:01 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: tumblr | Classes: 2
+
+Result: tumblr | acc = 0.5950 +/- 0.0466
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/tumblr_nc2_seed7.json
+
+=== seed=7 tumblr @ 08:34:47 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: tumblr | Classes: 2
+
+Result: tumblr | acc = 0.5978 +/- 0.0192
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/tumblr_nc2_seed8.json
+
+=== seed=8 tumblr @ 08:35:25 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: tumblr | Classes: 2
+
+Result: tumblr | acc = 0.5951 +/- 0.0297
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/tumblr_nc2_seed9.json
+
+=== seed=9 tumblr @ 08:36:10 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: mit | Classes: 2
+
+Result: mit | acc = 0.6937 +/- 0.1345
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/mit_nc2_seed0.json
+
+=== seed=0 mit @ 08:36:46 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: mit | Classes: 2
+
+Result: mit | acc = 0.6316 +/- 0.1321
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/mit_nc2_seed1.json
+
+=== seed=1 mit @ 08:37:18 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: mit | Classes: 2
+
+Result: mit | acc = 0.5789 +/- 0.0865
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/mit_nc2_seed2.json
+
+=== seed=2 mit @ 08:37:43 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: mit | Classes: 2
+
+Result: mit | acc = 0.6289 +/- 0.0979
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/mit_nc2_seed3.json
+
+=== seed=3 mit @ 08:38:06 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: mit | Classes: 2
+
+Result: mit | acc = 0.5895 +/- 0.1007
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/mit_nc2_seed4.json
+
+=== seed=4 mit @ 08:38:41 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: mit | Classes: 2
+
+Result: mit | acc = 0.5784 +/- 0.1067
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/mit_nc2_seed5.json
+
+=== seed=5 mit @ 08:39:04 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: mit | Classes: 2
+
+Result: mit | acc = 0.6789 +/- 0.1370
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/mit_nc2_seed6.json
+
+=== seed=6 mit @ 08:39:32 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: mit | Classes: 2
+
+Result: mit | acc = 0.6153 +/- 0.1328
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/mit_nc2_seed7.json
+
+=== seed=7 mit @ 08:40:02 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: mit | Classes: 2
+
+Result: mit | acc = 0.5779 +/- 0.0924
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/mit_nc2_seed8.json
+
+=== seed=8 mit @ 08:40:24 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: mit | Classes: 2
+
+Result: mit | acc = 0.5989 +/- 0.1538
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/mit_nc2_seed9.json
+
+=== seed=9 mit @ 08:40:51 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: highschool | Classes: 2
+
+Result: highschool | acc = 0.6444 +/- 0.1464
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/highschool_nc2_seed0.json
+
+=== seed=0 highschool @ 08:41:22 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: highschool | Classes: 2
+
+Result: highschool | acc = 0.5167 +/- 0.0853
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/highschool_nc2_seed1.json
+
+=== seed=1 highschool @ 08:41:51 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: highschool | Classes: 2
+
+Result: highschool | acc = 0.5833 +/- 0.0861
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/highschool_nc2_seed2.json
+
+=== seed=2 highschool @ 08:42:31 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: highschool | Classes: 2
+
+Result: highschool | acc = 0.6333 +/- 0.0539
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/highschool_nc2_seed3.json
+
+=== seed=3 highschool @ 08:43:00 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: highschool | Classes: 2
+
+Result: highschool | acc = 0.5889 +/- 0.0850
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/highschool_nc2_seed4.json
+
+=== seed=4 highschool @ 08:43:41 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: highschool | Classes: 2
+
+Result: highschool | acc = 0.5500 +/- 0.0754
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/highschool_nc2_seed5.json
+
+=== seed=5 highschool @ 08:44:15 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: highschool | Classes: 2
+
+Result: highschool | acc = 0.5833 +/- 0.0930
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/highschool_nc2_seed6.json
+
+=== seed=6 highschool @ 08:44:51 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: highschool | Classes: 2
+
+Result: highschool | acc = 0.6000 +/- 0.0624
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/highschool_nc2_seed7.json
+
+=== seed=7 highschool @ 08:45:26 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: highschool | Classes: 2
+
+Result: highschool | acc = 0.5278 +/- 0.0351
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/highschool_nc2_seed8.json
+
+=== seed=8 highschool @ 08:46:07 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: highschool | Classes: 2
+
+Result: highschool | acc = 0.6278 +/- 0.1077
+Saved results to /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/highschool_nc2_seed9.json
+
+=== seed=9 highschool @ 08:46:33 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Downloading https://vanderbilt.box.com/shared/static/2so3fnfqakeu6hktz322o3nm2c8ocus7.zip
+Extracting /nas/home/jahin/TCBG_fair_eval/TCBG/data/raw/neurograph/DynHCPActivity/2so3fnfqakeu6hktz322o3nm2c8ocus7.zip
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_task | Classes: 7
+
+Result: dynhcp_task | test_acc = 0.3190
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_task_nc7_seed0.json
+
+=== seed=0 dynhcp_task @ 10:06:44 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_task | Classes: 7
+
+Result: dynhcp_task | test_acc = 0.2653
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_task_nc7_seed1.json
+
+=== seed=1 dynhcp_task @ 10:43:08 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_task | Classes: 7
+
+Result: dynhcp_task | test_acc = 0.2942
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_task_nc7_seed2.json
+
+=== seed=2 dynhcp_task @ 10:44:50 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_task | Classes: 7
+
+Result: dynhcp_task | test_acc = 0.2498
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_task_nc7_seed3.json
+
+=== seed=3 dynhcp_task @ 10:46:35 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_task | Classes: 7
+
+Result: dynhcp_task | test_acc = 0.1860
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_task_nc7_seed4.json
+
+=== seed=4 dynhcp_task @ 10:48:57 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_task | Classes: 7
+
+Result: dynhcp_task | test_acc = 0.3150
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_task_nc7_seed5.json
+
+=== seed=5 dynhcp_task @ 10:50:43 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_task | Classes: 7
+
+Result: dynhcp_task | test_acc = 0.1525
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_task_nc7_seed6.json
+
+=== seed=6 dynhcp_task @ 10:53:26 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_task | Classes: 7
+
+Result: dynhcp_task | test_acc = 0.2270
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_task_nc7_seed7.json
+
+=== seed=7 dynhcp_task @ 10:55:27 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_task | Classes: 7
+
+Result: dynhcp_task | test_acc = 0.2707
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_task_nc7_seed8.json
+
+=== seed=8 dynhcp_task @ 10:58:07 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_task | Classes: 7
+
+Result: dynhcp_task | test_acc = 0.3526
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_task_nc7_seed9.json
+
+=== seed=9 dynhcp_task @ 11:01:12 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Downloading https://vanderbilt.box.com/shared/static/mj0z6unea34lfz1hkdwsinj7g22yohxn.zip
+Extracting /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/TCBG/data/raw/neurograph/DynHCPGender/mj0z6unea34lfz1hkdwsinj7g22yohxn.zip
+Device: cuda | Dataset: dynhcp_gender | Classes: 2
+
+Result: dynhcp_gender | test_acc = 0.5926
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_gender_nc2_seed0.json
+
+=== seed=0 dynhcp_gender @ 11:04:25 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_gender | Classes: 2
+
+Result: dynhcp_gender | test_acc = 0.6250
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_gender_nc2_seed1.json
+
+=== seed=1 dynhcp_gender @ 11:09:57 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_gender | Classes: 2
+
+Result: dynhcp_gender | test_acc = 0.5278
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_gender_nc2_seed2.json
+
+=== seed=2 dynhcp_gender @ 11:10:48 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_gender | Classes: 2
+
+Result: dynhcp_gender | test_acc = 0.5694
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_gender_nc2_seed3.json
+
+=== seed=3 dynhcp_gender @ 11:11:19 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_gender | Classes: 2
+
+Result: dynhcp_gender | test_acc = 0.5370
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_gender_nc2_seed4.json
+
+=== seed=4 dynhcp_gender @ 11:12:02 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_gender | Classes: 2
+
+Result: dynhcp_gender | test_acc = 0.5648
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_gender_nc2_seed5.json
+
+=== seed=5 dynhcp_gender @ 11:12:44 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_gender | Classes: 2
+
+Result: dynhcp_gender | test_acc = 0.5231
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_gender_nc2_seed6.json
+
+=== seed=6 dynhcp_gender @ 11:13:23 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_gender | Classes: 2
+
+Result: dynhcp_gender | test_acc = 0.5046
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_gender_nc2_seed7.json
+
+=== seed=7 dynhcp_gender @ 11:13:56 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_gender | Classes: 2
+
+Result: dynhcp_gender | test_acc = 0.5509
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_gender_nc2_seed8.json
+
+=== seed=8 dynhcp_gender @ 11:14:35 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_gender | Classes: 2
+
+Result: dynhcp_gender | test_acc = 0.5231
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_gender_nc2_seed9.json
+
+=== seed=9 dynhcp_gender @ 11:15:08 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Downloading https://vanderbilt.box.com/shared/static/195f9teg4t4apn6kl6hbc4ib4g9addtq.zip
+Extracting /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/TCBG/data/raw/neurograph/DynHCPAge/195f9teg4t4apn6kl6hbc4ib4g9addtq.zip
+Device: cuda | Dataset: dynhcp_age | Classes: 3
+
+Result: dynhcp_age | test_acc = 0.4372
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_age_nc3_seed0.json
+
+=== seed=0 dynhcp_age @ 11:15:48 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_age | Classes: 3
+
+Result: dynhcp_age | test_acc = 0.4186
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_age_nc3_seed1.json
+
+=== seed=1 dynhcp_age @ 11:20:50 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_age | Classes: 3
+
+Result: dynhcp_age | test_acc = 0.4465
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_age_nc3_seed2.json
+
+=== seed=2 dynhcp_age @ 11:21:26 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_age | Classes: 3
+
+Result: dynhcp_age | test_acc = 0.4651
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_age_nc3_seed3.json
+
+=== seed=3 dynhcp_age @ 11:22:04 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_age | Classes: 3
+
+Result: dynhcp_age | test_acc = 0.4093
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_age_nc3_seed4.json
+
+=== seed=4 dynhcp_age @ 11:22:38 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_age | Classes: 3
+
+Result: dynhcp_age | test_acc = 0.4698
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_age_nc3_seed5.json
+
+=== seed=5 dynhcp_age @ 11:23:10 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_age | Classes: 3
+
+Result: dynhcp_age | test_acc = 0.4186
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_age_nc3_seed6.json
+
+=== seed=6 dynhcp_age @ 11:23:50 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_age | Classes: 3
+
+Result: dynhcp_age | test_acc = 0.4279
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_age_nc3_seed7.json
+
+=== seed=7 dynhcp_age @ 11:24:22 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_age | Classes: 3
+
+Result: dynhcp_age | test_acc = 0.4279
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_age_nc3_seed8.json
+
+=== seed=8 dynhcp_age @ 11:25:00 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: dynhcp_age | Classes: 3
+
+Result: dynhcp_age | test_acc = 0.4744
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/dynhcp_age_nc3_seed9.json
+
+=== seed=9 dynhcp_age @ 11:25:29 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 2
+
+Result: pems04 | acc = 0.5887 +/- 0.1206
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc2_seed0.json
+
+=== seed=0 pems04 @ 11:58:59 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 2
+
+Result: pems04 | acc = 0.6497 +/- 0.0023
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc2_seed1.json
+
+=== seed=1 pems04 @ 12:02:11 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 2
+
+Result: pems04 | acc = 0.6497 +/- 0.0023
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc2_seed2.json
+
+=== seed=2 pems04 @ 12:03:36 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 2
+
+Result: pems04 | acc = 0.6497 +/- 0.0023
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc2_seed3.json
+
+=== seed=3 pems04 @ 12:04:50 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 2
+
+Result: pems04 | acc = 0.6497 +/- 0.0023
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc2_seed4.json
+
+=== seed=4 pems04 @ 12:06:07 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 2
+
+Result: pems04 | acc = 0.6497 +/- 0.0023
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc2_seed5.json
+
+=== seed=5 pems04 @ 12:07:39 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 2
+
+Result: pems04 | acc = 0.6497 +/- 0.0023
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc2_seed6.json
+
+=== seed=6 pems04 @ 12:08:50 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 2
+
+Result: pems04 | acc = 0.6497 +/- 0.0023
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc2_seed7.json
+
+=== seed=7 pems04 @ 12:10:24 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 2
+
+Result: pems04 | acc = 0.6497 +/- 0.0023
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc2_seed8.json
+
+=== seed=8 pems04 @ 12:11:41 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 2
+
+Result: pems04 | acc = 0.6497 +/- 0.0023
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc2_seed9.json
+
+=== seed=9 pems04 @ 12:13:06 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 2
+
+Result: pems08 | acc = 0.6492 +/- 0.0026
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc2_seed0.json
+
+=== seed=0 pems08 @ 12:14:31 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 2
+
+Result: pems08 | acc = 0.6492 +/- 0.0026
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc2_seed1.json
+
+=== seed=1 pems08 @ 12:18:11 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 2
+
+Result: pems08 | acc = 0.6492 +/- 0.0026
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc2_seed2.json
+
+=== seed=2 pems08 @ 12:19:30 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 2
+
+Result: pems08 | acc = 0.6492 +/- 0.0026
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc2_seed3.json
+
+=== seed=3 pems08 @ 12:20:48 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 2
+
+Result: pems08 | acc = 0.6492 +/- 0.0026
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc2_seed4.json
+
+=== seed=4 pems08 @ 12:22:28 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 2
+
+Result: pems08 | acc = 0.6492 +/- 0.0026
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc2_seed5.json
+
+=== seed=5 pems08 @ 12:24:02 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 2
+
+Result: pems08 | acc = 0.6492 +/- 0.0026
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc2_seed6.json
+
+=== seed=6 pems08 @ 12:25:28 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 2
+
+Result: pems08 | acc = 0.6492 +/- 0.0026
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc2_seed7.json
+
+=== seed=7 pems08 @ 12:26:35 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 2
+
+Result: pems08 | acc = 0.6492 +/- 0.0026
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc2_seed8.json
+
+=== seed=8 pems08 @ 12:27:49 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 2
+
+Result: pems08 | acc = 0.6492 +/- 0.0026
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc2_seed9.json
+
+=== seed=9 pems08 @ 12:29:14 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 2
+
+Result: pemsbay | acc = 0.6499 +/- 0.0003
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc2_seed0.json
+
+=== seed=0 pemsbay @ 12:30:31 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 2
+
+Result: pemsbay | acc = 0.6499 +/- 0.0003
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc2_seed1.json
+
+=== seed=1 pemsbay @ 12:49:25 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 2
+
+Result: pemsbay | acc = 0.6499 +/- 0.0003
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc2_seed2.json
+
+=== seed=2 pemsbay @ 12:53:50 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 2
+
+Result: pemsbay | acc = 0.6499 +/- 0.0003
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc2_seed3.json
+
+=== seed=3 pemsbay @ 12:57:03 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 2
+
+Result: pemsbay | acc = 0.6499 +/- 0.0003
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc2_seed4.json
+
+=== seed=4 pemsbay @ 13:00:27 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 2
+
+Result: pemsbay | acc = 0.6499 +/- 0.0003
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc2_seed5.json
+
+=== seed=5 pemsbay @ 13:03:39 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 2
+
+Result: pemsbay | acc = 0.6499 +/- 0.0003
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc2_seed6.json
+
+=== seed=6 pemsbay @ 13:06:58 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 2
+
+Result: pemsbay | acc = 0.6499 +/- 0.0003
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc2_seed7.json
+
+=== seed=7 pemsbay @ 13:09:37 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 2
+
+Result: pemsbay | acc = 0.6499 +/- 0.0003
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc2_seed8.json
+
+=== seed=8 pemsbay @ 13:13:35 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 2
+
+Result: pemsbay | acc = 0.6499 +/- 0.0003
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc2_seed9.json
+
+=== seed=9 pemsbay @ 13:17:33 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 3
+
+Result: pems04 | acc = 0.3687 +/- 0.0612
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc3_seed0.json
+
+=== seed=0 pems04 @ 13:37:09 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 3
+
+Result: pems04 | acc = 0.3997 +/- 0.0021
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc3_seed1.json
+
+=== seed=1 pems04 @ 13:40:15 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 3
+
+Result: pems04 | acc = 0.3899 +/- 0.0190
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc3_seed2.json
+
+=== seed=2 pems04 @ 13:41:18 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 3
+
+Result: pems04 | acc = 0.3997 +/- 0.0021
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc3_seed3.json
+
+=== seed=3 pems04 @ 13:42:32 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 3
+
+Result: pems04 | acc = 0.3997 +/- 0.0021
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc3_seed4.json
+
+=== seed=4 pems04 @ 13:43:41 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 3
+
+Result: pems04 | acc = 0.3899 +/- 0.0190
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc3_seed5.json
+
+=== seed=5 pems04 @ 13:44:37 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 3
+
+Result: pems04 | acc = 0.3899 +/- 0.0190
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc3_seed6.json
+
+=== seed=6 pems04 @ 13:45:39 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 3
+
+Result: pems04 | acc = 0.3899 +/- 0.0190
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc3_seed7.json
+
+=== seed=7 pems04 @ 13:46:35 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 3
+
+Result: pems04 | acc = 0.3800 +/- 0.0228
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc3_seed8.json
+
+=== seed=8 pems04 @ 13:47:41 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems04 | Classes: 3
+
+Result: pems04 | acc = 0.3799 +/- 0.0264
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems04_nc3_seed9.json
+
+=== seed=9 pems04 @ 13:48:52 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 3
+
+Result: pems08 | acc = 0.3911 +/- 0.0200
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc3_seed0.json
+
+=== seed=0 pems08 @ 13:49:54 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 3
+
+Result: pems08 | acc = 0.4005 +/- 0.0028
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc3_seed1.json
+
+=== seed=1 pems08 @ 14:24:09 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 3
+
+Result: pems08 | acc = 0.3803 +/- 0.0248
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc3_seed2.json
+
+=== seed=2 pems08 @ 14:25:23 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 3
+
+Result: pems08 | acc = 0.3791 +/- 0.0246
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc3_seed3.json
+
+=== seed=3 pems08 @ 14:26:23 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 3
+
+Result: pems08 | acc = 0.3520 +/- 0.0558
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc3_seed4.json
+
+=== seed=4 pems08 @ 14:27:09 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 3
+
+Result: pems08 | acc = 0.3696 +/- 0.0244
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc3_seed5.json
+
+=== seed=5 pems08 @ 14:28:14 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 3
+
+Result: pems08 | acc = 0.4005 +/- 0.0028
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc3_seed6.json
+
+=== seed=6 pems08 @ 14:29:13 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 3
+
+Result: pems08 | acc = 0.3898 +/- 0.0206
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc3_seed7.json
+
+=== seed=7 pems08 @ 14:29:58 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 3
+
+Result: pems08 | acc = 0.4005 +/- 0.0028
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc3_seed8.json
+
+=== seed=8 pems08 @ 14:31:00 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pems08 | Classes: 3
+
+Result: pems08 | acc = 0.4005 +/- 0.0028
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pems08_nc3_seed9.json
+
+=== seed=9 pems08 @ 14:31:55 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 3
+
+Result: pemsbay | acc = 0.3800 +/- 0.0243
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc3_seed0.json
+
+=== seed=0 pemsbay @ 14:32:48 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 3
+
+Result: pemsbay | acc = 0.3998 +/- 0.0010
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc3_seed1.json
+
+=== seed=1 pemsbay @ 15:05:14 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 3
+
+Result: pemsbay | acc = 0.3998 +/- 0.0010
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc3_seed2.json
+
+=== seed=2 pemsbay @ 15:08:03 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 3
+
+Result: pemsbay | acc = 0.3901 +/- 0.0200
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc3_seed3.json
+
+=== seed=3 pemsbay @ 15:11:09 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 3
+
+Result: pemsbay | acc = 0.3800 +/- 0.0247
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc3_seed4.json
+
+=== seed=4 pemsbay @ 15:13:58 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 3
+
+Result: pemsbay | acc = 0.3897 +/- 0.0197
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc3_seed5.json
+
+=== seed=5 pemsbay @ 15:16:37 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 3
+
+Result: pemsbay | acc = 0.3800 +/- 0.0243
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc3_seed6.json
+
+=== seed=6 pemsbay @ 15:19:16 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 3
+
+Result: pemsbay | acc = 0.3901 +/- 0.0200
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc3_seed7.json
+
+=== seed=7 pemsbay @ 15:21:41 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 3
+
+Result: pemsbay | acc = 0.3694 +/- 0.0238
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc3_seed8.json
+
+=== seed=8 pemsbay @ 15:24:36 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: pemsbay | Classes: 3
+
+Result: pemsbay | acc = 0.3800 +/- 0.0243
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/pemsbay_nc3_seed9.json
+
+=== seed=9 pemsbay @ 15:27:42 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: facebook | Classes: 2
+
+Result: facebook | acc = 0.6513 +/- 0.0554
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/facebook_nc2_seed0.json
+
+=== seed=0 facebook @ 01:57:43 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: facebook | Classes: 2
+
+Result: facebook | acc = 0.7126 +/- 0.0302
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/facebook_nc2_seed1.json
+
+=== seed=1 facebook @ 02:00:15 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: facebook | Classes: 2
+
+Result: facebook | acc = 0.6915 +/- 0.0493
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/facebook_nc2_seed2.json
+
+=== seed=2 facebook @ 02:02:36 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: facebook | Classes: 2
+
+Result: facebook | acc = 0.7216 +/- 0.0287
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/facebook_nc2_seed3.json
+
+=== seed=3 facebook @ 02:05:00 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: facebook | Classes: 2
+
+Result: facebook | acc = 0.7286 +/- 0.0323
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/facebook_nc2_seed4.json
+
+=== seed=4 facebook @ 02:07:26 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: facebook | Classes: 2
+
+Result: facebook | acc = 0.6804 +/- 0.0727
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/facebook_nc2_seed5.json
+
+=== seed=5 facebook @ 02:10:35 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: facebook | Classes: 2
+
+Result: facebook | acc = 0.7327 +/- 0.0350
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/facebook_nc2_seed6.json
+
+=== seed=6 facebook @ 02:12:42 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: facebook | Classes: 2
+
+Result: facebook | acc = 0.6804 +/- 0.0755
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/facebook_nc2_seed7.json
+
+=== seed=7 facebook @ 02:15:25 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: facebook | Classes: 2
+
+Result: facebook | acc = 0.7296 +/- 0.0234
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/facebook_nc2_seed8.json
+
+=== seed=8 facebook @ 02:17:45 ===
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Dataset: facebook | Classes: 2
+
+Result: facebook | acc = 0.6905 +/- 0.0358
+Saved results to /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/facebook_nc2_seed9.json
+
+=== seed=9 facebook @ 02:20:13 ===

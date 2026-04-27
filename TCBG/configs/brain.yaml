@@ -1,0 +1,37 @@
+# TCBG Brain Network Configuration
+# Overrides for NeuroGraph DynHCP datasets
+
+T_grid: 34       # matches exactly 34 fMRI timesteps
+K_grid: 15       # narrower curvature range in brain networks
+epsilon_lookback: 3.0   # 3 timesteps lookback (guide Section 7.1)
+hom_dim: [0, 1]
+min_persistence: 0.01
+
+gin_layers: 3
+gin_hidden: 64
+gin_dropout: 0.3
+
+batch_size: 64   # larger batch for brain (7443 graphs)
+epochs: 200
+patience: 30
+lr: 0.001
+
+# Evaluation: fixed 70/10/20 split, seed=42 (NeuroGraph protocol)
+eval_protocol: fixed_split
+train_frac: 0.70
+val_frac: 0.10
+test_frac: 0.20
+seed: 42
+
+# Dataset-specific settings
+dynhcp_task:
+  num_classes: 7
+  num_timesteps: 34
+
+dynhcp_gender:
+  num_classes: 2
+  num_timesteps: 34
+
+dynhcp_age:
+  num_classes: 3
+  num_timesteps: 34

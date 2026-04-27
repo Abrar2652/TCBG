@@ -1,0 +1,43 @@
+TCBG Fair Eval | device=cuda | seeds=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Datasets: ['pems04', 'pems08', 'pemsbay']
+
+============================================================  pems04  (num_classes=2)
+  seed=0  acc=58.87%  (191s)
+  seed=1  acc=64.97%  (85s)
+  seed=2  acc=64.97%  (75s)
+  seed=3  acc=64.97%  (77s)
+  seed=4  acc=64.97%  (91s)
+  seed=5  acc=64.97%  (71s)
+  seed=6  acc=64.97%  (94s)
+  seed=7  acc=64.97%  (76s)
+  seed=8  acc=64.97%  (85s)
+  seed=9  acc=64.97%  (85s)
+  TCBG Fair: 64.36% ± 1.83%
+
+============================================================  pems08  (num_classes=2)
+  seed=0  acc=64.92%  (220s)
+  seed=1  acc=64.92%  (79s)
+  seed=2  acc=64.92%  (78s)
+  seed=3  acc=64.92%  (100s)
+  seed=4  acc=64.92%  (94s)
+  seed=5  acc=64.92%  (86s)
+  seed=6  acc=64.92%  (66s)
+  seed=7  acc=64.92%  (75s)
+  seed=8  acc=64.92%  (85s)
+  seed=9  acc=64.92%  (77s)
+  TCBG Fair: 64.92% ± 0.00%
+
+============================================================  pemsbay  (num_classes=2)
+  seed=0  acc=64.99%  (1134s)
+  seed=1  acc=64.99%  (265s)
+  seed=2  acc=64.99%  (193s)
+  seed=3  acc=64.99%  (204s)
+  seed=4  acc=64.99%  (192s)
+  seed=5  acc=64.99%  (199s)
+  seed=6  acc=64.99%  (159s)
+  seed=7  acc=64.99%  (237s)
+  seed=8  acc=64.99%  (238s)
+  seed=9  acc=64.99%  (267s)
+  TCBG Fair: 64.99% ± 0.00%
+
+Saved -> /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/fair_comparison.json

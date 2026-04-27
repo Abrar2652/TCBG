@@ -1,0 +1,124 @@
+TempGNTK Fair Eval | device=cuda
+Protocol: StratifiedKFold(5) x 10 seeds
+
+
+============================================================
+DATASET: facebook_ct1
+============================================================
+  995 graphs, 2 classes
+  Computing Gram matrix (995 graphs)...
+  Shape: (995, 995, 5)  [41.5 min]
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+  seed=0  mean=52.36%
+  seed=1  mean=49.95%
+  seed=2  mean=48.64%
+  seed=3  mean=50.35%
+  seed=4  mean=49.95%
+  seed=5  mean=50.45%
+  seed=6  mean=51.26%
+  seed=7  mean=48.24%
+  seed=8  mean=47.64%
+  seed=9  mean=50.95%
+
+  RESULT: 49.98% +/- 1.38%
+  Saved: /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tempgntk_fair/facebook_ct1_fair.json
+
+==================================================
+SUMMARY
+==================================================
+  facebook_ct1          49.98% +/- 1.38%

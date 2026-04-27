@@ -1,0 +1,38 @@
+# TCBG Default Configuration
+# All values here match the guide (Section 11)
+
+# --- Bifiltration ---
+T_grid: 30
+K_grid: 20
+epsilon_lookback: auto       # 'auto' uses dataset-dependent formula
+hom_dim: [0, 1]              # H0 + H1 (both homology dimensions)
+
+# --- Graphcode ---
+matching: overlap             # bar matching strategy across curvature levels
+min_persistence: 0.01         # drop bars shorter than this (normalised)
+
+# --- GIN Classifier ---
+node_feat_dim: 4              # [birth, death, curv_level, persistence]
+gin_layers: 3
+gin_hidden: 64
+gin_dropout: 0.3
+gin_eps: 0.0                  # learnable (0.0 = starts at 0, trained)
+pooling: mean+max             # concatenate mean and max global pooling
+
+# --- Training ---
+optimizer: adam
+lr: 0.001
+weight_decay: 1.0e-4
+epochs: 200
+patience: 30                  # early stopping on validation loss
+batch_size: 32
+scheduler: reduce_on_plateau
+scheduler_patience: 10
+scheduler_factor: 0.5
+gradient_clip: 1.0
+seed: 42
+
+# --- Grid search (for final tuning) ---
+lr_search: [0.01, 0.005, 0.001, 0.0005]
+dropout_search: [0.1, 0.3, 0.5]
+hidden_search: [32, 64, 128]

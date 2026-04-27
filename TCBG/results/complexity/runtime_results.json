@@ -1,0 +1,57 @@
+{
+  "infectious": {
+    "dataset": "infectious",
+    "num_classes": 2,
+    "n_graphs": 200,
+    "n_params": 9893,
+    "train_total_s": 11.56,
+    "train_per_fold_s": 2.31,
+    "avg_epochs": 47.8,
+    "inference_ms_graph": 0.129,
+    "peak_gpu_mb": 57.2
+  },
+  "dblp": {
+    "dataset": "dblp",
+    "num_classes": 2,
+    "n_graphs": 755,
+    "n_params": 36165,
+    "train_total_s": 128.17,
+    "train_per_fold_s": 25.63,
+    "avg_epochs": 87.0,
+    "inference_ms_graph": 0.1055,
+    "peak_gpu_mb": 87.9
+  },
+  "tumblr": {
+    "dataset": "tumblr",
+    "num_classes": 2,
+    "n_graphs": 373,
+    "n_params": 137861,
+    "train_total_s": 37.3,
+    "train_per_fold_s": 7.46,
+    "avg_epochs": 43.8,
+    "inference_ms_graph": 0.1295,
+    "peak_gpu_mb": 185.4
+  },
+  "mit": {
+    "dataset": "mit",
+    "num_classes": 2,
+    "n_graphs": 97,
+    "n_params": 36165,
+    "train_total_s": 14.75,
+    "train_per_fold_s": 2.95,
+    "avg_epochs": 71.8,
+    "inference_ms_graph": 0.2258,
+    "peak_gpu_mb": 69.9
+  },
+  "highschool": {
+    "dataset": "highschool",
+    "num_classes": 2,
+    "n_graphs": 180,
+    "n_params": 36165,
+    "train_total_s": 19.82,
+    "train_per_fold_s": 3.96,
+    "avg_epochs": 44.8,
+    "inference_ms_graph": 0.1434,
+    "peak_gpu_mb": 105.6
+  }
+}

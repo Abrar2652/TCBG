@@ -1,0 +1,740 @@
+[21:11:58] TCBG Pipeline Started
+Device: cuda  Datasets: ['infectious', 'dblp', 'tumblr', 'mit', 'highschool']
+
+[21:11:58] Step 1 (Grid Search): ALL DONE — skipping
+
+======================================================================
+[21:11:58] STEP: Ablation Study
+======================================================================
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Seeds: [0, 1, 2, 3, 4]
+Variants (14): ['full', 'no_global', 'no_jk', 'no_curvature', 'no_global_no_jk', 'k_grid_3', 'k_grid_10', 'h0_only', 'h1_only', 'gin_1layer', 'gin_2layers', 'gin_4layers', 'no_label_smooth', 'no_scheduler']
+
+
+=================================================================
+DATASET: INFECTIOUS
+=================================================================
+Classes: 2 | Best params: {'lr': 0.005, 'gin_dropout': 0.0, 'gin_hidden': 32}
+  Full TCBG                             69.80% ± 1.91%  (1.3m)
+  w/o Global Features                   66.60% ± 2.35%  (1.1m)
+  w/o JK-Max                            73.20% ± 2.58%  (1.1m)
+    [cache miss] Building K=1 hom_dim=[0, 1] for infectious...
+  w/o Curvature κ (K=1)                 80.00% ± 2.12%  (1.2m)
+  w/o Global + JK-Max                   67.30% ± 2.50%  (1.1m)
+    [cache miss] Building K=3 hom_dim=[0, 1] for infectious...
+  K_grid=3 (near 1D)                    76.40% ± 1.83%  (1.2m)
+    [cache miss] Building K=10 hom_dim=[0, 1] for infectious...
+  K_grid=10 (half)                      72.20% ± 1.60%  (1.4m)
+    [cache miss] Building K=20 hom_dim=[0] for infectious...
+  H0 only (components)                  71.10% ± 3.09%  (1.6m)
+    [cache miss] Building K=20 hom_dim=[1] for infectious...
+  H1 only (loops)                       72.50% ± 0.63%  (1.5m)
+  GIN depth=1                           75.80% ± 1.21%  (0.9m)
+  GIN depth=2                           72.90% ± 2.50%  (1.0m)
+  GIN depth=4                           69.90% ± 1.16%  (1.2m)
+  No label smoothing                    69.70% ± 2.09%  (1.1m)
+  No LR scheduler                       72.10% ± 3.06%  (1.2m)
+  Saved → ./results/ablation/ablation_infectious.json
+
+=================================================================
+DATASET: DBLP
+=================================================================
+Classes: 2 | Best params: {'lr': 0.005, 'gin_dropout': 0.0, 'gin_hidden': 64}
+  Full TCBG                             93.70% ± 0.31%  (7.4m)
+  w/o Global Features                   88.45% ± 0.58%  (5.3m)
+  w/o JK-Max                            93.93% ± 0.53%  (7.1m)
+    [cache miss] Building K=1 hom_dim=[0, 1] for dblp...
+  w/o Curvature κ (K=1)                 92.29% ± 0.62%  (5.2m)
+  w/o Global + JK-Max                   88.45% ± 0.51%  (8.1m)
+    [cache miss] Building K=3 hom_dim=[0, 1] for dblp...
+  K_grid=3 (near 1D)                    93.54% ± 0.64%  (7.7m)
+    [cache miss] Building K=10 hom_dim=[0, 1] for dblp...
+  K_grid=10 (half)                      92.58% ± 0.50%  (6.3m)
+    [cache miss] Building K=20 hom_dim=[0] for dblp...
+  H0 only (components)                  92.48% ± 0.65%  (7.3m)
+    [cache miss] Building K=20 hom_dim=[1] for dblp...
+  H1 only (loops)                       89.91% ± 0.77%  (5.8m)
+  GIN depth=1                           93.99% ± 0.65%  (4.3m)
+  GIN depth=2                           94.01% ± 0.21%  (7.8m)
+  GIN depth=4                           93.72% ± 0.54%  (10.8m)
+  No label smoothing                    93.46% ± 0.53%  (6.1m)
+  No LR scheduler                       93.30% ± 0.48%  (7.6m)
+  Saved → ./results/ablation/ablation_dblp.json
+
+=================================================================
+DATASET: TUMBLR
+=================================================================
+Classes: 2 | Best params: {'lr': 0.01, 'gin_dropout': 0.3, 'gin_hidden': 128}
+  Full TCBG                             56.57% ± 1.52%  (1.8m)
+  w/o Global Features                   56.89% ± 1.87%  (2.0m)
+  w/o JK-Max                            55.29% ± 2.43%  (2.7m)
+    [cache miss] Building K=1 hom_dim=[0, 1] for tumblr...
+  w/o Curvature κ (K=1)                 59.78% ± 0.97%  (2.2m)
+  w/o Global + JK-Max                   52.49% ± 2.26%  (2.4m)
+    [cache miss] Building K=3 hom_dim=[0, 1] for tumblr...
+  K_grid=3 (near 1D)                    59.73% ± 1.55%  (2.5m)
+    [cache miss] Building K=10 hom_dim=[0, 1] for tumblr...
+  K_grid=10 (half)                      57.75% ± 1.76%  (3.0m)
+    [cache miss] Building K=20 hom_dim=[0] for tumblr...
+  H0 only (components)                  58.19% ± 1.44%  (2.7m)
+    [cache miss] Building K=20 hom_dim=[1] for tumblr...
+  H1 only (loops)                       58.02% ± 0.92%  (3.0m)
+  GIN depth=1                           58.06% ± 1.62%  (1.2m)
+  GIN depth=2                           59.45% ± 1.38%  (2.1m)
+  GIN depth=4                           57.10% ± 1.45%  (2.7m)
+  No label smoothing                    56.68% ± 1.32%  (2.0m)
+  No LR scheduler                       58.81% ± 1.36%  (2.4m)
+  Saved → ./results/ablation/ablation_tumblr.json
+
+=================================================================
+DATASET: MIT
+=================================================================
+Classes: 2 | Best params: {'lr': 0.01, 'gin_dropout': 0.3, 'gin_hidden': 64}
+  Full TCBG                             69.84% ± 2.92%  (1.0m)
+  w/o Global Features                   72.08% ± 3.65%  (1.0m)
+  w/o JK-Max                            68.83% ± 3.84%  (0.7m)
+    [cache miss] Building K=1 hom_dim=[0, 1] for mit...
+  w/o Curvature κ (K=1)                 69.05% ± 4.71%  (0.9m)
+  w/o Global + JK-Max                   68.22% ± 3.34%  (0.7m)
+    [cache miss] Building K=3 hom_dim=[0, 1] for mit...
+  K_grid=3 (near 1D)                    72.97% ± 2.81%  (0.7m)
+    [cache miss] Building K=10 hom_dim=[0, 1] for mit...
+  K_grid=10 (half)                      59.38% ± 5.25%  (0.5m)
+    [cache miss] Building K=20 hom_dim=[0] for mit...
+  H0 only (components)                  64.17% ± 7.02%  (0.7m)
+    [cache miss] Building K=20 hom_dim=[1] for mit...
+  H1 only (loops)                       68.35% ± 3.25%  (1.1m)
+  GIN depth=1                           67.58% ± 6.03%  (0.5m)
+  GIN depth=2                           70.87% ± 2.49%  (0.6m)
+  GIN depth=4                           73.74% ± 5.57%  (0.8m)
+  No label smoothing                    68.87% ± 2.64%  (0.5m)
+  No LR scheduler                       70.14% ± 0.65%  (0.3m)
+  Saved → ./results/ablation/ablation_mit.json
+
+=================================================================
+DATASET: HIGHSCHOOL
+=================================================================
+Classes: 2 | Best params: {'lr': 0.01, 'gin_dropout': 0.5, 'gin_hidden': 64}
+  Full TCBG                             62.56% ± 1.59%  (0.9m)
+  w/o Global Features                   61.89% ± 2.76%  (1.2m)
+  w/o JK-Max                            57.44% ± 2.69%  (1.1m)
+    [cache miss] Building K=1 hom_dim=[0, 1] for highschool...
+  w/o Curvature κ (K=1)                 56.22% ± 2.21%  (1.2m)
+  w/o Global + JK-Max                   57.44% ± 2.27%  (1.7m)
+    [cache miss] Building K=3 hom_dim=[0, 1] for highschool...
+  K_grid=3 (near 1D)                    62.78% ± 5.59%  (0.9m)
+    [cache miss] Building K=10 hom_dim=[0, 1] for highschool...
+  K_grid=10 (half)                      58.33% ± 4.27%  (0.9m)
+    [cache miss] Building K=20 hom_dim=[0] for highschool...
+  H0 only (components)                  64.89% ± 3.81%  (1.5m)
+    [cache miss] Building K=20 hom_dim=[1] for highschool...
+  H1 only (loops)                       61.33% ± 1.94%  (1.1m)
+  GIN depth=1                           64.44% ± 1.72%  (0.8m)
+  GIN depth=2                           61.44% ± 1.94%  (0.9m)
+  GIN depth=4                           62.78% ± 2.65%  (1.8m)
+  No label smoothing                    59.44% ± 2.41%  (1.3m)
+  No LR scheduler                       59.44% ± 1.83%  (1.4m)
+  Saved → ./results/ablation/ablation_highschool.json
+
+
+==========================================================================================
+                                     ABLATION SUMMARY                                     
+==========================================================================================
+Variant                             infectious       dblp     tumblr        mit highschool
+------------------------------------------------------------------------------------------
+
+── Group 1: Core components ──
+  Full TCBG                            69.80%    93.70%    56.57%    69.84%    62.56%
+  w/o Global Features                  66.60%    88.45%    56.89%    72.08%    61.89%
+  w/o JK-Max                           73.20%    93.93%    55.29%    68.83%    57.44%
+  w/o Curvature κ (K=1)                80.00%    92.29%    59.78%    69.05%    56.22%
+  w/o Global + JK-Max                  67.30%    88.45%    52.49%    68.22%    57.44%
+
+── Group 2: Curvature resolution ──
+  K_grid=3 (near 1D)                   76.40%    93.54%    59.73%    72.97%    62.78%
+  K_grid=10 (half)                     72.20%    92.58%    57.75%    59.38%    58.33%
+
+── Group 3: Homology dim ──
+  H0 only (components)                 71.10%    92.48%    58.19%    64.17%    64.89%
+  H1 only (loops)                      72.50%    89.91%    58.02%    68.35%    61.33%
+
+── Group 4: GIN depth ──
+  GIN depth=1                          75.80%    93.99%    58.06%    67.58%    64.44%
+  GIN depth=2                          72.90%    94.01%    59.45%    70.87%    61.44%
+  GIN depth=4                          69.90%    93.72%    57.10%    73.74%    62.78%
+
+── Group 5: Training ──
+  No label smoothing                   69.70%    93.46%    56.68%    68.87%    59.44%
+  No LR scheduler                      72.10%    93.30%    58.81%    70.14%    59.44%
+
+Ablation summary → ./results/ablation/ablation_summary.json
+
+[00:04:57] Ablation Study: DONE
+
+======================================================================
+[00:04:57] STEP: Sensitivity Analysis
+======================================================================
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Seeds: [0, 1, 2]
+Params: ['T_grid', 'K_grid', 'min_persistence', 'gin_layers', 'gin_hidden', 'dropout', 'lr', 'weight_decay', 'label_smoothing']
+
+
+=================================================================
+PARAMETER: T_grid  values=[10, 15, 20, 25, 30, 35, 40]  datasets=['dblp', 'infectious']
+=================================================================
+  dblp          T_grid=10        => 93.25% ± 0.39%  (6.4m)
+  dblp          T_grid=15        => 91.92% ± 0.29%  (5.4m)
+  dblp          T_grid=20        => 92.27% ± 0.45%  (5.5m)
+  dblp          T_grid=25        => 92.89% ± 0.87%  (6.6m)
+  dblp          T_grid=30        => 94.26% ± 0.23%  (6.4m)
+  dblp          T_grid=35        => 92.10% ± 1.05%  (6.2m)
+  dblp          T_grid=40        => 92.32% ± 0.54%  (6.1m)
+  infectious    T_grid=10        => 77.00% ± 4.64%  (1.2m)
+  infectious    T_grid=15        => 77.33% ± 2.32%  (1.3m)
+  infectious    T_grid=20        => 75.67% ± 3.66%  (1.3m)
+  infectious    T_grid=25        => 73.33% ± 2.05%  (1.0m)
+  infectious    T_grid=30        => 70.33% ± 1.65%  (1.0m)
+  infectious    T_grid=35        => 74.00% ± 1.47%  (1.3m)
+  infectious    T_grid=40        => 71.67% ± 1.55%  (1.4m)
+  → ./results/sensitivity/sensitivity_T_grid.json
+
+=================================================================
+PARAMETER: K_grid  values=[1, 5, 10, 15, 20, 25, 30]  datasets=['dblp', 'infectious']
+=================================================================
+  dblp          K_grid=1         => 91.52% ± 0.60%  (3.6m)
+  dblp          K_grid=5         => 92.41% ± 0.44%  (5.9m)
+  dblp          K_grid=10        => 92.23% ± 0.27%  (5.6m)
+  dblp          K_grid=15        => 92.72% ± 0.50%  (5.4m)
+  dblp          K_grid=20        => 93.51% ± 0.11%  (6.0m)
+  dblp          K_grid=25        => 91.35% ± 0.35%  (5.7m)
+  dblp          K_grid=30        => 92.23% ± 0.33%  (6.5m)
+  infectious    K_grid=1         => 80.50% ± 2.86%  (0.9m)
+  infectious    K_grid=5         => 71.17% ± 5.04%  (0.8m)
+  infectious    K_grid=10        => 72.00% ± 2.16%  (1.0m)
+  infectious    K_grid=15        => 73.50% ± 4.71%  (1.1m)
+  infectious    K_grid=20        => 71.33% ± 0.47%  (1.0m)
+  infectious    K_grid=25        => 70.67% ± 3.40%  (1.3m)
+  infectious    K_grid=30        => 72.50% ± 3.08%  (1.3m)
+  → ./results/sensitivity/sensitivity_K_grid.json
+
+=================================================================
+PARAMETER: min_persistence  values=[0.0, 0.01, 0.03, 0.05, 0.07, 0.1, 0.15]  datasets=['dblp', 'infectious']
+=================================================================
+  dblp          min_persistence=0.0       => 92.14% ± 0.84%  (6.5m)
+  dblp          min_persistence=0.01      => 92.63% ± 0.12%  (5.9m)
+  dblp          min_persistence=0.03      => 92.27% ± 0.38%  (6.2m)
+  dblp          min_persistence=0.05      => 94.08% ± 0.35%  (5.4m)
+  dblp          min_persistence=0.07      => 92.98% ± 0.68%  (6.8m)
+  dblp          min_persistence=0.1       => 92.41% ± 0.61%  (6.6m)
+  dblp          min_persistence=0.15      => 91.70% ± 0.12%  (6.6m)
+  infectious    min_persistence=0.0       => 77.17% ± 2.25%  (1.4m)
+  infectious    min_persistence=0.01      => 74.83% ± 0.62%  (1.4m)
+  infectious    min_persistence=0.03      => 75.33% ± 1.31%  (1.2m)
+  infectious    min_persistence=0.05      => 71.00% ± 2.86%  (1.0m)
+  infectious    min_persistence=0.07      => 71.50% ± 1.08%  (1.3m)
+  infectious    min_persistence=0.1       => 68.67% ± 2.46%  (1.1m)
+  infectious    min_persistence=0.15      => 74.33% ± 1.93%  (1.3m)
+  → ./results/sensitivity/sensitivity_min_persistence.json
+
+=================================================================
+PARAMETER: gin_layers  values=[1, 2, 3, 4, 5]  datasets=['infectious', 'dblp', 'tumblr', 'mit', 'highschool']
+=================================================================
+  infectious    gin_layers=1         => 72.83% ± 0.85%  (0.6m)
+  infectious    gin_layers=2         => 71.67% ± 0.94%  (0.7m)
+  infectious    gin_layers=3         => 69.67% ± 0.47%  (1.0m)
+  infectious    gin_layers=4         => 71.00% ± 1.87%  (1.1m)
+  infectious    gin_layers=5         => 69.33% ± 1.65%  (1.2m)
+  dblp          gin_layers=1         => 93.73% ± 0.12%  (3.5m)
+  dblp          gin_layers=2         => 93.95% ± 0.76%  (5.3m)
+  dblp          gin_layers=3         => 93.60% ± 0.33%  (6.7m)
+  dblp          gin_layers=4         => 92.85% ± 0.47%  (7.3m)
+  dblp          gin_layers=5         => 92.76% ± 0.17%  (8.8m)
+  tumblr        gin_layers=1         => 59.85% ± 1.21%  (0.9m)
+  tumblr        gin_layers=2         => 54.95% ± 3.11%  (1.1m)
+  tumblr        gin_layers=3         => 58.08% ± 2.22%  (1.9m)
+  tumblr        gin_layers=4         => 56.03% ± 0.67%  (2.2m)
+  tumblr        gin_layers=5         => 58.00% ± 2.57%  (2.2m)
+  mit           gin_layers=1         => 65.21% ± 5.36%  (0.2m)
+  mit           gin_layers=2         => 70.77% ± 1.36%  (0.4m)
+  mit           gin_layers=3         => 69.40% ± 2.64%  (0.6m)
+  mit           gin_layers=4         => 71.79% ± 3.31%  (0.8m)
+  mit           gin_layers=5         => 74.21% ± 6.10%  (0.9m)
+  highschool    gin_layers=1         => 61.48% ± 4.54%  (0.5m)
+  highschool    gin_layers=2         => 57.96% ± 2.28%  (0.7m)
+  highschool    gin_layers=3         => 62.22% ± 4.54%  (1.0m)
+  highschool    gin_layers=4         => 59.44% ± 2.36%  (1.2m)
+  highschool    gin_layers=5         => 59.81% ± 3.02%  (1.1m)
+  → ./results/sensitivity/sensitivity_gin_layers.json
+
+=================================================================
+PARAMETER: gin_hidden  values=[16, 32, 64, 128, 256]  datasets=['infectious', 'dblp', 'tumblr', 'mit', 'highschool']
+=================================================================
+  infectious    gin_hidden=16        => 71.17% ± 1.31%  (1.1m)
+  infectious    gin_hidden=32        => 68.83% ± 2.01%  (1.0m)
+  infectious    gin_hidden=64        => 71.67% ± 0.85%  (1.0m)
+  infectious    gin_hidden=128       => 67.67% ± 1.31%  (0.6m)
+  infectious    gin_hidden=256       => 66.67% ± 1.93%  (0.8m)
+  dblp          gin_hidden=16        => 93.16% ± 0.51%  (5.8m)
+  dblp          gin_hidden=32        => 94.00% ± 0.77%  (6.2m)
+  dblp          gin_hidden=64        => 93.73% ± 0.44%  (6.4m)
+  dblp          gin_hidden=128       => 93.25% ± 0.50%  (6.4m)
+  dblp          gin_hidden=256       => 92.80% ± 0.72%  (8.0m)
+  tumblr        gin_hidden=16        => 58.97% ± 0.80%  (1.7m)
+  tumblr        gin_hidden=32        => 57.72% ± 2.51%  (1.6m)
+  tumblr        gin_hidden=64        => 56.30% ± 2.53%  (1.6m)
+  tumblr        gin_hidden=128       => 57.18% ± 1.44%  (1.9m)
+  tumblr        gin_hidden=256       => 57.46% ± 2.82%  (2.1m)
+  mit           gin_hidden=16        => 70.18% ± 3.81%  (0.7m)
+  mit           gin_hidden=32        => 71.47% ± 2.75%  (0.8m)
+  mit           gin_hidden=64        => 71.42% ± 3.90%  (0.7m)
+  mit           gin_hidden=128       => 69.74% ± 1.83%  (0.7m)
+  mit           gin_hidden=256       => 70.44% ± 5.21%  (0.8m)
+  highschool    gin_hidden=16        => 62.78% ± 3.60%  (1.4m)
+  highschool    gin_hidden=32        => 63.70% ± 1.59%  (1.2m)
+  highschool    gin_hidden=64        => 62.41% ± 3.02%  (1.1m)
+  highschool    gin_hidden=128       => 62.41% ± 0.94%  (1.1m)
+  highschool    gin_hidden=256       => 59.07% ± 3.02%  (1.1m)
+  → ./results/sensitivity/sensitivity_gin_hidden.json
+
+=================================================================
+PARAMETER: dropout  values=[0.0, 0.1, 0.2, 0.3, 0.5]  datasets=['infectious', 'dblp', 'tumblr', 'mit', 'highschool']
+=================================================================
+  infectious    dropout=0.0       => 70.83% ± 1.65%  (1.1m)
+  infectious    dropout=0.1       => 71.00% ± 1.47%  (1.1m)
+  infectious    dropout=0.2       => 71.00% ± 3.56%  (1.1m)
+  infectious    dropout=0.3       => 70.17% ± 2.46%  (1.2m)
+  infectious    dropout=0.5       => 69.33% ± 1.03%  (1.6m)
+  dblp          dropout=0.0       => 93.51% ± 0.57%  (6.7m)
+  dblp          dropout=0.1       => 93.55% ± 0.50%  (5.8m)
+  dblp          dropout=0.2       => 91.43% ± 1.72%  (4.9m)
+  dblp          dropout=0.3       => 91.26% ± 1.04%  (4.0m)
+  dblp          dropout=0.5       => 77.66% ± 1.78%  (3.1m)
+  tumblr        dropout=0.0       => 56.38% ± 0.55%  (1.9m)
+  tumblr        dropout=0.1       => 57.55% ± 2.78%  (1.7m)
+  tumblr        dropout=0.2       => 57.37% ± 0.57%  (1.8m)
+  tumblr        dropout=0.3       => 56.29% ± 1.37%  (1.8m)
+  tumblr        dropout=0.5       => 56.55% ± 1.00%  (2.0m)
+  mit           dropout=0.0       => 69.77% ± 6.99%  (0.6m)
+  mit           dropout=0.1       => 74.28% ± 0.77%  (0.6m)
+  mit           dropout=0.2       => 70.39% ± 3.41%  (0.5m)
+  mit           dropout=0.3       => 71.44% ± 1.83%  (0.6m)
+  mit           dropout=0.5       => 70.70% ± 3.16%  (0.5m)
+  highschool    dropout=0.0       => 61.11% ± 6.29%  (0.9m)
+  highschool    dropout=0.1       => 59.26% ± 3.67%  (0.7m)
+  highschool    dropout=0.2       => 60.19% ± 2.24%  (0.9m)
+  highschool    dropout=0.3       => 60.56% ± 0.45%  (0.9m)
+  highschool    dropout=0.5       => 62.22% ± 1.98%  (1.0m)
+  → ./results/sensitivity/sensitivity_dropout.json
+
+=================================================================
+PARAMETER: lr  values=[0.01, 0.005, 0.001, 0.0005, 0.0001]  datasets=['infectious', 'dblp', 'tumblr', 'mit', 'highschool']
+=================================================================
+  infectious    lr=0.01      => 74.33% ± 2.25%  (0.9m)
+  infectious    lr=0.005     => 70.67% ± 2.25%  (1.1m)
+  infectious    lr=0.001     => 67.50% ± 1.08%  (1.0m)
+  infectious    lr=0.0005    => 68.17% ± 2.90%  (1.0m)
+  infectious    lr=0.0001    => 64.17% ± 1.43%  (1.6m)
+  dblp          lr=0.01      => 94.17% ± 0.56%  (7.1m)
+  dblp          lr=0.005     => 93.33% ± 0.98%  (7.3m)
+  dblp          lr=0.001     => 92.89% ± 0.87%  (6.1m)
+  dblp          lr=0.0005    => 92.23% ± 0.44%  (6.6m)
+  dblp          lr=0.0001    => 88.61% ± 0.37%  (6.8m)
+  tumblr        lr=0.01      => 57.72% ± 2.15%  (1.5m)
+  tumblr        lr=0.005     => 55.30% ± 2.13%  (1.6m)
+  tumblr        lr=0.001     => 56.65% ± 1.28%  (1.5m)
+  tumblr        lr=0.0005    => 57.00% ± 0.69%  (1.5m)
+  tumblr        lr=0.0001    => 58.44% ± 1.01%  (1.7m)
+  mit           lr=0.01      => 72.21% ± 2.98%  (0.7m)
+  mit           lr=0.005     => 70.49% ± 4.29%  (0.6m)
+  mit           lr=0.001     => 63.33% ± 4.11%  (0.7m)
+  mit           lr=0.0005    => 60.26% ± 3.42%  (0.6m)
+  mit           lr=0.0001    => 62.96% ± 1.76%  (0.8m)
+  highschool    lr=0.01      => 59.81% ± 3.64%  (1.0m)
+  highschool    lr=0.005     => 63.15% ± 1.31%  (0.8m)
+  highschool    lr=0.001     => 56.11% ± 2.83%  (1.0m)
+  highschool    lr=0.0005    => 55.56% ± 1.81%  (1.0m)
+  highschool    lr=0.0001    => 54.63% ± 1.14%  (1.4m)
+  → ./results/sensitivity/sensitivity_lr.json
+
+=================================================================
+PARAMETER: weight_decay  values=[0.0, 1e-05, 0.0001, 0.001]  datasets=['infectious', 'dblp', 'tumblr', 'mit', 'highschool']
+=================================================================
+  infectious    weight_decay=0.0       => 70.67% ± 1.84%  (1.2m)
+  infectious    weight_decay=1e-05     => 68.33% ± 1.55%  (1.0m)
+  infectious    weight_decay=0.0001    => 70.50% ± 0.41%  (1.0m)
+  infectious    weight_decay=0.001     => 69.33% ± 2.01%  (1.1m)
+  dblp          weight_decay=0.0       => 94.00% ± 0.23%  (5.9m)
+  dblp          weight_decay=1e-05     => 93.77% ± 0.56%  (6.1m)
+  dblp          weight_decay=0.0001    => 93.91% ± 0.22%  (6.4m)
+  dblp          weight_decay=0.001     => 93.73% ± 0.80%  (6.7m)
+  tumblr        weight_decay=0.0       => 56.74% ± 0.35%  (1.8m)
+  tumblr        weight_decay=1e-05     => 58.54% ± 1.45%  (1.8m)
+  tumblr        weight_decay=0.0001    => 58.98% ± 0.68%  (1.9m)
+  tumblr        weight_decay=0.001     => 56.46% ± 0.83%  (1.4m)
+  mit           weight_decay=0.0       => 73.86% ± 1.03%  (0.6m)
+  mit           weight_decay=1e-05     => 70.81% ± 3.60%  (0.6m)
+  mit           weight_decay=0.0001    => 71.51% ± 1.31%  (0.6m)
+  mit           weight_decay=0.001     => 71.44% ± 5.71%  (0.6m)
+  highschool    weight_decay=0.0       => 64.26% ± 1.46%  (1.1m)
+  highschool    weight_decay=1e-05     => 62.78% ± 3.88%  (1.0m)
+  highschool    weight_decay=0.0001    => 62.04% ± 1.14%  (0.9m)
+  highschool    weight_decay=0.001     => 59.44% ± 1.57%  (1.1m)
+  → ./results/sensitivity/sensitivity_weight_decay.json
+
+=================================================================
+PARAMETER: label_smoothing  values=[0.0, 0.05, 0.1, 0.15, 0.2]  datasets=['infectious', 'dblp', 'tumblr', 'mit', 'highschool']
+=================================================================
+  infectious    label_smoothing=0.0       => 71.17% ± 1.43%  (1.0m)
+  infectious    label_smoothing=0.05      => 70.50% ± 0.71%  (1.0m)
+  infectious    label_smoothing=0.1       => 70.50% ± 3.54%  (1.0m)
+  infectious    label_smoothing=0.15      => 69.83% ± 2.46%  (0.7m)
+  infectious    label_smoothing=0.2       => 67.67% ± 1.70%  (1.1m)
+  dblp          label_smoothing=0.0       => 93.11% ± 0.39%  (4.5m)
+  dblp          label_smoothing=0.05      => 94.48% ± 0.41%  (5.5m)
+  dblp          label_smoothing=0.1       => 93.86% ± 0.41%  (6.0m)
+  dblp          label_smoothing=0.15      => 93.33% ± 0.25%  (6.7m)
+  dblp          label_smoothing=0.2       => 93.95% ± 0.63%  (7.9m)
+  tumblr        label_smoothing=0.0       => 58.27% ± 1.76%  (2.0m)
+  tumblr        label_smoothing=0.05      => 56.02% ± 2.08%  (1.7m)
+  tumblr        label_smoothing=0.1       => 57.46% ± 0.77%  (1.7m)
+  tumblr        label_smoothing=0.15      => 55.84% ± 2.73%  (1.7m)
+  tumblr        label_smoothing=0.2       => 56.29% ± 0.38%  (1.7m)
+  mit           label_smoothing=0.0       => 72.12% ± 3.18%  (0.6m)
+  mit           label_smoothing=0.05      => 68.07% ± 5.89%  (0.6m)
+  mit           label_smoothing=0.1       => 73.79% ± 3.18%  (0.5m)
+  mit           label_smoothing=0.15      => 68.68% ± 3.46%  (0.6m)
+  mit           label_smoothing=0.2       => 71.49% ± 0.41%  (0.6m)
+  highschool    label_smoothing=0.0       => 61.11% ± 0.79%  (1.1m)
+  highschool    label_smoothing=0.05      => 61.48% ± 2.50%  (1.0m)
+  highschool    label_smoothing=0.1       => 59.07% ± 1.31%  (1.0m)
+  highschool    label_smoothing=0.15      => 58.33% ± 2.40%  (0.8m)
+  highschool    label_smoothing=0.2       => 61.85% ± 2.14%  (1.0m)
+  → ./results/sensitivity/sensitivity_label_smoothing.json
+
+Sensitivity summary → ./results/sensitivity/sensitivity_summary.json
+
+[07:41:16] Sensitivity Analysis: DONE
+
+======================================================================
+[07:41:16] STEP: Convergence Analysis
+======================================================================
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Seeds: [0, 1, 2, 3, 4] | Epochs: 200
+
+
+=======================================================  INFECTIOUS  =======================================================
+Config: lr=0.005  dropout=0.0  hidden=32  nc=2
+  seed=0 fold=1  best_test=72.50%  converged@ep24/54
+  seed=0 fold=2  best_test=67.50%  converged@ep9/39
+  seed=0 fold=3  best_test=75.00%  converged@ep20/50
+  seed=0 fold=4  best_test=77.50%  converged@ep77/107
+  seed=0 fold=5  best_test=70.00%  converged@ep17/47
+  seed=1 fold=1  best_test=75.00%  converged@ep20/50
+  seed=1 fold=2  best_test=60.00%  converged@ep20/50
+  seed=1 fold=3  best_test=75.00%  converged@ep32/62
+  seed=1 fold=4  best_test=70.00%  converged@ep16/46
+  seed=1 fold=5  best_test=72.50%  converged@ep26/56
+  seed=2 fold=1  best_test=65.00%  converged@ep26/56
+  seed=2 fold=2  best_test=70.00%  converged@ep18/48
+  seed=2 fold=3  best_test=70.00%  converged@ep10/40
+  seed=2 fold=4  best_test=70.00%  converged@ep21/51
+  seed=2 fold=5  best_test=77.50%  converged@ep24/54
+  seed=3 fold=1  best_test=67.50%  converged@ep26/56
+  seed=3 fold=2  best_test=72.50%  converged@ep13/43
+  seed=3 fold=3  best_test=67.50%  converged@ep15/45
+  seed=3 fold=4  best_test=85.00%  converged@ep29/59
+  seed=3 fold=5  best_test=77.50%  converged@ep22/52
+  seed=4 fold=1  best_test=77.50%  converged@ep33/63
+  seed=4 fold=2  best_test=72.50%  converged@ep20/50
+  seed=4 fold=3  best_test=67.50%  converged@ep22/52
+  seed=4 fold=4  best_test=75.00%  converged@ep19/49
+  seed=4 fold=5  best_test=67.50%  converged@ep22/52
+
+  SUMMARY: 71.90% ± 5.06%  converged @ ep 23.2 ± 12.4  (avg 53 total epochs)
+  Saved → ./results/convergence/convergence_infectious.json
+
+=======================================================  DBLP  =======================================================
+Config: lr=0.005  dropout=0.0  hidden=64  nc=2
+  seed=0 fold=1  best_test=94.04%  converged@ep54/84
+  seed=0 fold=2  best_test=95.36%  converged@ep72/102
+  seed=0 fold=3  best_test=92.05%  converged@ep96/126
+  seed=0 fold=4  best_test=92.72%  converged@ep30/60
+  seed=0 fold=5  best_test=94.70%  converged@ep72/102
+  seed=1 fold=1  best_test=92.72%  converged@ep59/89
+  seed=1 fold=2  best_test=94.04%  converged@ep50/80
+  seed=1 fold=3  best_test=93.38%  converged@ep47/77
+  seed=1 fold=4  best_test=91.39%  converged@ep22/52
+  seed=1 fold=5  best_test=95.36%  converged@ep26/56
+  seed=2 fold=1  best_test=93.38%  converged@ep46/76
+  seed=2 fold=2  best_test=94.04%  converged@ep59/89
+  seed=2 fold=3  best_test=88.74%  converged@ep12/42
+  seed=2 fold=4  best_test=90.07%  converged@ep36/66
+  seed=2 fold=5  best_test=94.70%  converged@ep69/99
+  seed=3 fold=1  best_test=95.36%  converged@ep17/47
+  seed=3 fold=2  best_test=95.36%  converged@ep68/98
+  seed=3 fold=3  best_test=96.69%  converged@ep84/114
+  seed=3 fold=4  best_test=90.73%  converged@ep24/54
+  seed=3 fold=5  best_test=92.72%  converged@ep72/102
+  seed=4 fold=1  best_test=94.04%  converged@ep42/72
+  seed=4 fold=2  best_test=94.70%  converged@ep41/71
+  seed=4 fold=3  best_test=92.05%  converged@ep38/68
+  seed=4 fold=4  best_test=94.04%  converged@ep44/74
+  seed=4 fold=5  best_test=96.03%  converged@ep70/100
+
+  SUMMARY: 93.54% ± 1.89%  converged @ ep 50.0 ± 21.4  (avg 80 total epochs)
+  Saved → ./results/convergence/convergence_dblp.json
+
+=======================================================  TUMBLR  =======================================================
+Config: lr=0.01  dropout=0.3  hidden=128  nc=2
+  seed=0 fold=1  best_test=58.67%  converged@ep35/65
+  seed=0 fold=2  best_test=57.33%  converged@ep6/36
+  seed=0 fold=3  best_test=54.67%  converged@ep8/38
+  seed=0 fold=4  best_test=55.41%  converged@ep5/35
+  seed=0 fold=5  best_test=59.46%  converged@ep13/43
+  seed=1 fold=1  best_test=64.00%  converged@ep28/58
+  seed=1 fold=2  best_test=57.33%  converged@ep3/33
+  seed=1 fold=3  best_test=64.00%  converged@ep15/45
+  seed=1 fold=4  best_test=48.65%  converged@ep17/47
+  seed=1 fold=5  best_test=56.76%  converged@ep22/52
+  seed=2 fold=1  best_test=50.67%  converged@ep5/35
+  seed=2 fold=2  best_test=56.00%  converged@ep7/37
+  seed=2 fold=3  best_test=54.67%  converged@ep32/62
+  seed=2 fold=4  best_test=55.41%  converged@ep7/37
+  seed=2 fold=5  best_test=74.32%  converged@ep12/42
+  seed=3 fold=1  best_test=56.00%  converged@ep26/56
+  seed=3 fold=2  best_test=50.67%  converged@ep23/53
+  seed=3 fold=3  best_test=49.33%  converged@ep10/40
+  seed=3 fold=4  best_test=62.16%  converged@ep18/48
+  seed=3 fold=5  best_test=56.76%  converged@ep20/50
+  seed=4 fold=1  best_test=56.00%  converged@ep6/36
+  seed=4 fold=2  best_test=50.67%  converged@ep15/45
+  seed=4 fold=3  best_test=62.67%  converged@ep25/55
+  seed=4 fold=4  best_test=55.41%  converged@ep12/42
+  seed=4 fold=5  best_test=55.41%  converged@ep8/38
+
+  SUMMARY: 56.90% ± 5.44%  converged @ ep 15.1 ± 9.0  (avg 45 total epochs)
+  Saved → ./results/convergence/convergence_tumblr.json
+
+=======================================================  MIT  =======================================================
+Config: lr=0.01  dropout=0.3  hidden=64  nc=2
+  seed=0 fold=1  best_test=85.00%  converged@ep49/79
+  seed=0 fold=2  best_test=65.00%  converged@ep50/80
+  seed=0 fold=3  best_test=73.68%  converged@ep20/50
+  seed=0 fold=4  best_test=47.37%  converged@ep1/31
+  seed=0 fold=5  best_test=73.68%  converged@ep95/125
+  seed=1 fold=1  best_test=80.00%  converged@ep62/92
+  seed=1 fold=2  best_test=75.00%  converged@ep25/55
+  seed=1 fold=3  best_test=57.89%  converged@ep33/63
+  seed=1 fold=4  best_test=42.11%  converged@ep27/57
+  seed=1 fold=5  best_test=68.42%  converged@ep2/32
+  seed=2 fold=1  best_test=45.00%  converged@ep32/62
+  seed=2 fold=2  best_test=75.00%  converged@ep19/49
+  seed=2 fold=3  best_test=57.89%  converged@ep23/53
+  seed=2 fold=4  best_test=63.16%  converged@ep24/54
+  seed=2 fold=5  best_test=73.68%  converged@ep25/55
+  seed=3 fold=1  best_test=70.00%  converged@ep12/42
+  seed=3 fold=2  best_test=95.00%  converged@ep18/48
+  seed=3 fold=3  best_test=68.42%  converged@ep60/90
+  seed=3 fold=4  best_test=78.95%  converged@ep47/77
+  seed=3 fold=5  best_test=57.89%  converged@ep32/62
+  seed=4 fold=1  best_test=65.00%  converged@ep9/39
+  seed=4 fold=2  best_test=65.00%  converged@ep5/35
+  seed=4 fold=3  best_test=63.16%  converged@ep34/64
+  seed=4 fold=4  best_test=84.21%  converged@ep21/51
+  seed=4 fold=5  best_test=63.16%  converged@ep64/94
+
+  SUMMARY: 67.75% ± 12.28%  converged @ ep 31.6 ± 21.8  (avg 62 total epochs)
+  Saved → ./results/convergence/convergence_mit.json
+
+=======================================================  HIGHSCHOOL  =======================================================
+Config: lr=0.01  dropout=0.5  hidden=64  nc=2
+  seed=0 fold=1  best_test=66.67%  converged@ep10/40
+  seed=0 fold=2  best_test=44.44%  converged@ep14/44
+  seed=0 fold=3  best_test=63.89%  converged@ep23/53
+  seed=0 fold=4  best_test=61.11%  converged@ep10/40
+  seed=0 fold=5  best_test=58.33%  converged@ep9/39
+  seed=1 fold=1  best_test=41.67%  converged@ep31/61
+  seed=1 fold=2  best_test=66.67%  converged@ep26/56
+  seed=1 fold=3  best_test=61.11%  converged@ep52/82
+  seed=1 fold=4  best_test=61.11%  converged@ep8/38
+  seed=1 fold=5  best_test=75.00%  converged@ep16/46
+  seed=2 fold=1  best_test=72.22%  converged@ep23/53
+  seed=2 fold=2  best_test=63.89%  converged@ep27/57
+  seed=2 fold=3  best_test=58.33%  converged@ep22/52
+  seed=2 fold=4  best_test=58.33%  converged@ep18/48
+  seed=2 fold=5  best_test=63.89%  converged@ep23/53
+  seed=3 fold=1  best_test=55.56%  converged@ep21/51
+  seed=3 fold=2  best_test=50.00%  converged@ep1/31
+  seed=3 fold=3  best_test=50.00%  converged@ep41/71
+  seed=3 fold=4  best_test=72.22%  converged@ep25/55
+  seed=3 fold=5  best_test=69.44%  converged@ep59/89
+  seed=4 fold=1  best_test=75.00%  converged@ep18/48
+  seed=4 fold=2  best_test=69.44%  converged@ep36/66
+  seed=4 fold=3  best_test=66.67%  converged@ep16/46
+  seed=4 fold=4  best_test=50.00%  converged@ep21/51
+  seed=4 fold=5  best_test=61.11%  converged@ep12/42
+
+  SUMMARY: 61.44% ± 8.87%  converged @ ep 22.5 ± 13.1  (avg 52 total epochs)
+  Saved → ./results/convergence/convergence_highschool.json
+
+
+=======================================================
+                  CONVERGENCE SUMMARY                  
+=======================================================
+  infectious  :  71.90%
+  dblp        :  93.54%
+  tumblr      :  56.90%
+  mit         :  67.75%
+  highschool  :  61.44%
+
+All convergence data → ./results/convergence/
+
+[07:58:36] Convergence Analysis: DONE
+
+======================================================================
+[07:58:36] STEP: Complexity Analysis
+======================================================================
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda
+
+
+──────────────────────────────────────────────────  INFECTIOUS  ──────────────────────────────────────────────────
+  [training & inference timing]
+    Params:            9,893
+    Epoch time:        29.0 ± 1.0 ms
+    Full 5-fold train: 7.8s  (avg 52 ep/fold)
+    Inference:         0.1102 ms/graph
+    Peak GPU:          57.0 MB
+  [scalability analysis]
+    n=  50 (25%)  epoch=10.8ms
+    n= 100 (50%)  epoch=21.5ms
+    n= 150 (75%)  epoch=29.6ms
+    n= 200 (100%)  epoch=40.8ms
+
+──────────────────────────────────────────────────  DBLP  ──────────────────────────────────────────────────
+  [training & inference timing]
+    Params:            36,165
+    Epoch time:        98.9 ± 4.2 ms
+    Full 5-fold train: 45.3s  (avg 73 ep/fold)
+    Inference:         0.0969 ms/graph
+    Peak GPU:          88.5 MB
+  [scalability analysis]
+    n= 188 (25%)  epoch=114.2ms
+    n= 377 (50%)  epoch=230.6ms
+    n= 566 (75%)  epoch=344.4ms
+    n= 755 (100%)  epoch=458.9ms
+
+──────────────────────────────────────────────────  TUMBLR  ──────────────────────────────────────────────────
+  [training & inference timing]
+    Params:            137,861
+    Epoch time:        156.1 ± 1.3 ms
+    Full 5-fold train: 19.3s  (avg 51 ep/fold)
+    Inference:         0.1056 ms/graph
+    Peak GPU:          192.7 MB
+  [scalability analysis]
+    n=  93 (25%)  epoch=20.4ms
+    n= 186 (50%)  epoch=36.6ms
+    n= 279 (75%)  epoch=58.0ms
+    n= 373 (100%)  epoch=75.5ms
+
+──────────────────────────────────────────────────  MIT  ──────────────────────────────────────────────────
+  [training & inference timing]
+  [scalability analysis]
+
+──────────────────────────────────────────────────  HIGHSCHOOL  ──────────────────────────────────────────────────
+  [training & inference timing]
+    Params:            36,165
+    Epoch time:        25.2 ± 0.7 ms
+    Full 5-fold train: 7.7s  (avg 45 ep/fold)
+    Inference:         0.1250 ms/graph
+    Peak GPU:          106.1 MB
+  [scalability analysis]
+    n=  45 (25%)  epoch=11.7ms
+    n=  90 (50%)  epoch=19.2ms
+    n= 135 (75%)  epoch=29.5ms
+    n= 180 (100%)  epoch=38.7ms
+
+
+====================================================================================================
+                                         COMPLEXITY SUMMARY                                         
+====================================================================================================
+Dataset        Graphs     Params   Preproc(s/g)   Ep(ms)  5-fold(s)   Infer(ms/g)   GPU(MB)
+----------------------------------------------------------------------------------------------------
+infectious        200      9,893              -     29.0        7.8        0.1102      57.0
+dblp              755     36,165              -     98.9       45.3        0.0969      88.5
+tumblr            373    137,861              -    156.1       19.3        0.1056     192.7
+mit                 -          -              -        -          -             -         -
+highschool        180     36,165              -     25.2        7.7        0.1250     106.1
+
+Saved → ./results/complexity/complexity_results.json
+
+[08:00:38] Complexity Analysis: DONE
+
+======================================================================
+[08:00:38] STEP: Runtime Analysis
+======================================================================
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda
+
+--- INFECTIOUS ---
+  Params:        9,893
+  Train (5-fold):11.6s  (48 avg epochs/fold)
+  Inference:     0.1290 ms/graph
+  Peak GPU:      57.2 MB
+--- DBLP ---
+  Params:        36,165
+  Train (5-fold):128.2s  (87 avg epochs/fold)
+  Inference:     0.1055 ms/graph
+  Peak GPU:      87.9 MB
+--- TUMBLR ---
+  Params:        137,861
+  Train (5-fold):37.3s  (44 avg epochs/fold)
+  Inference:     0.1295 ms/graph
+  Peak GPU:      185.4 MB
+--- MIT ---
+--- HIGHSCHOOL ---
+  Params:        36,165
+  Train (5-fold):19.8s  (45 avg epochs/fold)
+  Inference:     0.1434 ms/graph
+  Peak GPU:      105.6 MB
+
+
+=====================================================================================
+                   RUNTIME TABLE (matches T3Former Table 7 format)                   
+=====================================================================================
+Dataset        Graphs     Params   Preproc(s)   Train(s)   Infer(ms/g)   GPU(MB)
+-------------------------------------------------------------------------------------
+infectious        200      9,893            -       11.6        0.1290      57.2
+dblp              755     36,165            -      128.2        0.1055      87.9
+tumblr            373    137,861            -       37.3        0.1295     185.4
+mit                 -          -            -          -             -         -
+highschool        180     36,165            -       19.8        0.1434     105.6
+
+Saved to ./results/complexity/runtime_results.json
+
+[08:04:22] Runtime Analysis: DONE
+
+
+[08:04:22] Pipeline complete in 10.9 hours
+
+
+======================================================================
+                        FINAL RESULTS SUMMARY                         
+======================================================================
+Dataset        TCBG (tuned)     T3Former      Delta
+-------------------------------------------------------
+infectious        69.55% +/- 2.22%       68.50%     +1.05%
+dblp              93.60% +/- 0.48%       60.90%    +32.70%
+tumblr            57.99% +/- 1.41%       63.20%     -5.21%
+mit               70.42% +/- 4.28%       73.16%     -2.74%
+highschool        56.83% +/- 3.99%       67.20%    -10.37%
+=======================================================
+
+All logs saved to ./logs/
+Grid search results: ./results_gs/
+Analysis results: ./results/

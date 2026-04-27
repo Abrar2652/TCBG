@@ -1,0 +1,114 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+T3Former Fair Eval | device=cuda | epochs=100
+Protocol: StratifiedKFold(5) x 10 seeds = 50 runs per dataset
+
+
+============================================================  FACEBOOK_CT1
+Loading data...
+  995 graphs loaded
+  classes=2  sage_dim=104  betti_shape=(995, 9, 4)  dos_shape=(995, 9, 4)
+
+--- Phase 1: Grid Search (3 seeds x 36 combos) ---
+  [skip grid] using defaults: lr=0.005 h=32 drop=0.3
+
+--- Phase 2: Full Eval (10 seeds x 5 folds) ---
+  Config: lr=0.005  h=32  drop=0.3
+
+  seed=0:
+    fold 1/5  acc=56.28%
+    fold 2/5  acc=47.74%
+    fold 3/5  acc=47.74%
+    fold 4/5  acc=53.27%
+    fold 5/5  acc=57.29%
+  --> seed=0 mean: 52.46%
+
+  seed=1:
+    fold 1/5  acc=54.27%
+    fold 2/5  acc=49.25%
+    fold 3/5  acc=41.71%
+    fold 4/5  acc=52.76%
+    fold 5/5  acc=45.73%
+  --> seed=1 mean: 48.74%
+
+  seed=2:
+    fold 1/5  acc=50.75%
+    fold 2/5  acc=53.27%
+    fold 3/5  acc=55.28%
+    fold 4/5  acc=47.24%
+    fold 5/5  acc=57.29%
+  --> seed=2 mean: 52.76%
+
+  seed=3:
+    fold 1/5  acc=48.24%
+    fold 2/5  acc=50.25%
+    fold 3/5  acc=42.71%
+    fold 4/5  acc=45.23%
+    fold 5/5  acc=55.28%
+  --> seed=3 mean: 48.34%
+
+  seed=4:
+    fold 1/5  acc=46.73%
+    fold 2/5  acc=53.27%
+    fold 3/5  acc=53.27%
+    fold 4/5  acc=56.28%
+    fold 5/5  acc=47.24%
+  --> seed=4 mean: 51.36%
+
+  seed=5:
+    fold 1/5  acc=43.22%
+    fold 2/5  acc=51.76%
+    fold 3/5  acc=46.23%
+    fold 4/5  acc=52.76%
+    fold 5/5  acc=50.75%
+  --> seed=5 mean: 48.94%
+
+  seed=6:
+    fold 1/5  acc=56.78%
+    fold 2/5  acc=51.26%
+    fold 3/5  acc=48.74%
+    fold 4/5  acc=57.29%
+    fold 5/5  acc=50.25%
+  --> seed=6 mean: 52.86%
+
+  seed=7:
+    fold 1/5  acc=51.26%
+    fold 2/5  acc=53.77%
+    fold 3/5  acc=51.76%
+    fold 4/5  acc=51.76%
+    fold 5/5  acc=54.27%
+  --> seed=7 mean: 52.56%
+
+  seed=8:
+    fold 1/5  acc=50.25%
+    fold 2/5  acc=48.74%
+    fold 3/5  acc=44.72%
+    fold 4/5  acc=49.75%
+    fold 5/5  acc=46.73%
+  --> seed=8 mean: 48.04%
+
+  seed=9:
+    fold 1/5  acc=46.23%
+    fold 2/5  acc=50.75%
+    fold 3/5  acc=54.27%
+    fold 4/5  acc=42.21%
+    fold 5/5  acc=48.74%
+  --> seed=9 mean: 48.44%
+
+  T3Former Fair:  50.45% +/- 2.00%
+  T3Former Paper: 0.00%  (single seed=42)
+  TCBG (ours):    0.00% +/- 0.00%
+
+
+===========================================================================
+       FAIR COMPARISON  (same protocol: StratifiedKFold x 10 seeds)        
+===========================================================================
+Dataset               T3Former (fair)    T3Former (paper)         TCBG (ours)
+---------------------------------------------------------------------------
+facebook_ct1       50.45% +/- 2.00%                0.00%     0.00% +/- 0.00%  <- T3F 
+===========================================================================
+
+Note: "T3Former (fair)" = T3Former model, our 10-seed protocol
+      "T3Former (paper)" = T3Former paper reported (single seed=42)
+
+Saved -> /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/t3former_fair/fair_comparison.json

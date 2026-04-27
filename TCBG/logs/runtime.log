@@ -1,0 +1,39 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda
+
+--- INFECTIOUS ---
+  Params:        9,893
+  Train (5-fold):11.6s  (48 avg epochs/fold)
+  Inference:     0.1290 ms/graph
+  Peak GPU:      57.2 MB
+--- DBLP ---
+  Params:        36,165
+  Train (5-fold):128.2s  (87 avg epochs/fold)
+  Inference:     0.1055 ms/graph
+  Peak GPU:      87.9 MB
+--- TUMBLR ---
+  Params:        137,861
+  Train (5-fold):37.3s  (44 avg epochs/fold)
+  Inference:     0.1295 ms/graph
+  Peak GPU:      185.4 MB
+--- MIT ---
+--- HIGHSCHOOL ---
+  Params:        36,165
+  Train (5-fold):19.8s  (45 avg epochs/fold)
+  Inference:     0.1434 ms/graph
+  Peak GPU:      105.6 MB
+
+
+=====================================================================================
+                   RUNTIME TABLE (matches T3Former Table 7 format)                   
+=====================================================================================
+Dataset        Graphs     Params   Preproc(s)   Train(s)   Infer(ms/g)   GPU(MB)
+-------------------------------------------------------------------------------------
+infectious        200      9,893            -       11.6        0.1290      57.2
+dblp              755     36,165            -      128.2        0.1055      87.9
+tumblr            373    137,861            -       37.3        0.1295     185.4
+mit                 -          -            -          -             -         -
+highschool        180     36,165            -       19.8        0.1434     105.6
+
+Saved to ./results/complexity/runtime_results.json

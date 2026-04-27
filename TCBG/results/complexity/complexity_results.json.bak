@@ -1,0 +1,141 @@
+{
+  "infectious": {
+    "dataset": "infectious",
+    "n_graphs": 200,
+    "n_params": 9893,
+    "gin_hidden": 32,
+    "epoch_time_ms_mean": 29.04978133738041,
+    "epoch_time_ms_std": 0.9979088816107641,
+    "full_train_5fold_s": 7.78,
+    "avg_epochs_per_fold": 51.8,
+    "inference_ms_per_graph": 0.1102,
+    "peak_gpu_mb": 57.0,
+    "scalability": [
+      {
+        "n_graphs": 50,
+        "fraction": 0.25,
+        "epoch_ms": 10.81
+      },
+      {
+        "n_graphs": 100,
+        "fraction": 0.5,
+        "epoch_ms": 21.52
+      },
+      {
+        "n_graphs": 150,
+        "fraction": 0.75,
+        "epoch_ms": 29.6
+      },
+      {
+        "n_graphs": 200,
+        "fraction": 1.0,
+        "epoch_ms": 40.8
+      }
+    ]
+  },
+  "dblp": {
+    "dataset": "dblp",
+    "n_graphs": 755,
+    "n_params": 36165,
+    "gin_hidden": 64,
+    "epoch_time_ms_mean": 98.93712014891207,
+    "epoch_time_ms_std": 4.156713641001884,
+    "full_train_5fold_s": 45.29,
+    "avg_epochs_per_fold": 72.8,
+    "inference_ms_per_graph": 0.0969,
+    "peak_gpu_mb": 88.5,
+    "scalability": [
+      {
+        "n_graphs": 188,
+        "fraction": 0.25,
+        "epoch_ms": 114.21
+      },
+      {
+        "n_graphs": 377,
+        "fraction": 0.5,
+        "epoch_ms": 230.6
+      },
+      {
+        "n_graphs": 566,
+        "fraction": 0.75,
+        "epoch_ms": 344.39
+      },
+      {
+        "n_graphs": 755,
+        "fraction": 1.0,
+        "epoch_ms": 458.91
+      }
+    ]
+  },
+  "tumblr": {
+    "dataset": "tumblr",
+    "n_graphs": 373,
+    "n_params": 137861,
+    "gin_hidden": 128,
+    "epoch_time_ms_mean": 156.13484955392778,
+    "epoch_time_ms_std": 1.338100023266074,
+    "full_train_5fold_s": 19.3,
+    "avg_epochs_per_fold": 50.6,
+    "inference_ms_per_graph": 0.1056,
+    "peak_gpu_mb": 192.7,
+    "scalability": [
+      {
+        "n_graphs": 93,
+        "fraction": 0.25,
+        "epoch_ms": 20.4
+      },
+      {
+        "n_graphs": 186,
+        "fraction": 0.5,
+        "epoch_ms": 36.64
+      },
+      {
+        "n_graphs": 279,
+        "fraction": 0.75,
+        "epoch_ms": 58.0
+      },
+      {
+        "n_graphs": 373,
+        "fraction": 1.0,
+        "epoch_ms": 75.55
+      }
+    ]
+  },
+  "mit": {
+    "dataset": "mit"
+  },
+  "highschool": {
+    "dataset": "highschool",
+    "n_graphs": 180,
+    "n_params": 36165,
+    "gin_hidden": 64,
+    "epoch_time_ms_mean": 25.201348261907697,
+    "epoch_time_ms_std": 0.6810949804467318,
+    "full_train_5fold_s": 7.69,
+    "avg_epochs_per_fold": 45.0,
+    "inference_ms_per_graph": 0.125,
+    "peak_gpu_mb": 106.1,
+    "scalability": [
+      {
+        "n_graphs": 45,
+        "fraction": 0.25,
+        "epoch_ms": 11.65
+      },
+      {
+        "n_graphs": 90,
+        "fraction": 0.5,
+        "epoch_ms": 19.24
+      },
+      {
+        "n_graphs": 135,
+        "fraction": 0.75,
+        "epoch_ms": 29.49
+      },
+      {
+        "n_graphs": 180,
+        "fraction": 1.0,
+        "epoch_ms": 38.69
+      }
+    ]
+  }
+}

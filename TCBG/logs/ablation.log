@@ -1,0 +1,163 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Seeds: [0, 1, 2, 3, 4]
+Variants (14): ['full', 'no_global', 'no_jk', 'no_curvature', 'no_global_no_jk', 'k_grid_3', 'k_grid_10', 'h0_only', 'h1_only', 'gin_1layer', 'gin_2layers', 'gin_4layers', 'no_label_smooth', 'no_scheduler']
+
+
+=================================================================
+DATASET: INFECTIOUS
+=================================================================
+Classes: 2 | Best params: {'lr': 0.005, 'gin_dropout': 0.0, 'gin_hidden': 32}
+  Full TCBG                             69.80% ± 1.91%  (1.3m)
+  w/o Global Features                   66.60% ± 2.35%  (1.1m)
+  w/o JK-Max                            73.20% ± 2.58%  (1.1m)
+    [cache miss] Building K=1 hom_dim=[0, 1] for infectious...
+  w/o Curvature κ (K=1)                 80.00% ± 2.12%  (1.2m)
+  w/o Global + JK-Max                   67.30% ± 2.50%  (1.1m)
+    [cache miss] Building K=3 hom_dim=[0, 1] for infectious...
+  K_grid=3 (near 1D)                    76.40% ± 1.83%  (1.2m)
+    [cache miss] Building K=10 hom_dim=[0, 1] for infectious...
+  K_grid=10 (half)                      72.20% ± 1.60%  (1.4m)
+    [cache miss] Building K=20 hom_dim=[0] for infectious...
+  H0 only (components)                  71.10% ± 3.09%  (1.6m)
+    [cache miss] Building K=20 hom_dim=[1] for infectious...
+  H1 only (loops)                       72.50% ± 0.63%  (1.5m)
+  GIN depth=1                           75.80% ± 1.21%  (0.9m)
+  GIN depth=2                           72.90% ± 2.50%  (1.0m)
+  GIN depth=4                           69.90% ± 1.16%  (1.2m)
+  No label smoothing                    69.70% ± 2.09%  (1.1m)
+  No LR scheduler                       72.10% ± 3.06%  (1.2m)
+  Saved → ./results/ablation/ablation_infectious.json
+
+=================================================================
+DATASET: DBLP
+=================================================================
+Classes: 2 | Best params: {'lr': 0.005, 'gin_dropout': 0.0, 'gin_hidden': 64}
+  Full TCBG                             93.70% ± 0.31%  (7.4m)
+  w/o Global Features                   88.45% ± 0.58%  (5.3m)
+  w/o JK-Max                            93.93% ± 0.53%  (7.1m)
+    [cache miss] Building K=1 hom_dim=[0, 1] for dblp...
+  w/o Curvature κ (K=1)                 92.29% ± 0.62%  (5.2m)
+  w/o Global + JK-Max                   88.45% ± 0.51%  (8.1m)
+    [cache miss] Building K=3 hom_dim=[0, 1] for dblp...
+  K_grid=3 (near 1D)                    93.54% ± 0.64%  (7.7m)
+    [cache miss] Building K=10 hom_dim=[0, 1] for dblp...
+  K_grid=10 (half)                      92.58% ± 0.50%  (6.3m)
+    [cache miss] Building K=20 hom_dim=[0] for dblp...
+  H0 only (components)                  92.48% ± 0.65%  (7.3m)
+    [cache miss] Building K=20 hom_dim=[1] for dblp...
+  H1 only (loops)                       89.91% ± 0.77%  (5.8m)
+  GIN depth=1                           93.99% ± 0.65%  (4.3m)
+  GIN depth=2                           94.01% ± 0.21%  (7.8m)
+  GIN depth=4                           93.72% ± 0.54%  (10.8m)
+  No label smoothing                    93.46% ± 0.53%  (6.1m)
+  No LR scheduler                       93.30% ± 0.48%  (7.6m)
+  Saved → ./results/ablation/ablation_dblp.json
+
+=================================================================
+DATASET: TUMBLR
+=================================================================
+Classes: 2 | Best params: {'lr': 0.01, 'gin_dropout': 0.3, 'gin_hidden': 128}
+  Full TCBG                             56.57% ± 1.52%  (1.8m)
+  w/o Global Features                   56.89% ± 1.87%  (2.0m)
+  w/o JK-Max                            55.29% ± 2.43%  (2.7m)
+    [cache miss] Building K=1 hom_dim=[0, 1] for tumblr...
+  w/o Curvature κ (K=1)                 59.78% ± 0.97%  (2.2m)
+  w/o Global + JK-Max                   52.49% ± 2.26%  (2.4m)
+    [cache miss] Building K=3 hom_dim=[0, 1] for tumblr...
+  K_grid=3 (near 1D)                    59.73% ± 1.55%  (2.5m)
+    [cache miss] Building K=10 hom_dim=[0, 1] for tumblr...
+  K_grid=10 (half)                      57.75% ± 1.76%  (3.0m)
+    [cache miss] Building K=20 hom_dim=[0] for tumblr...
+  H0 only (components)                  58.19% ± 1.44%  (2.7m)
+    [cache miss] Building K=20 hom_dim=[1] for tumblr...
+  H1 only (loops)                       58.02% ± 0.92%  (3.0m)
+  GIN depth=1                           58.06% ± 1.62%  (1.2m)
+  GIN depth=2                           59.45% ± 1.38%  (2.1m)
+  GIN depth=4                           57.10% ± 1.45%  (2.7m)
+  No label smoothing                    56.68% ± 1.32%  (2.0m)
+  No LR scheduler                       58.81% ± 1.36%  (2.4m)
+  Saved → ./results/ablation/ablation_tumblr.json
+
+=================================================================
+DATASET: MIT
+=================================================================
+Classes: 2 | Best params: {'lr': 0.01, 'gin_dropout': 0.3, 'gin_hidden': 64}
+  Full TCBG                             69.84% ± 2.92%  (1.0m)
+  w/o Global Features                   72.08% ± 3.65%  (1.0m)
+  w/o JK-Max                            68.83% ± 3.84%  (0.7m)
+    [cache miss] Building K=1 hom_dim=[0, 1] for mit...
+  w/o Curvature κ (K=1)                 69.05% ± 4.71%  (0.9m)
+  w/o Global + JK-Max                   68.22% ± 3.34%  (0.7m)
+    [cache miss] Building K=3 hom_dim=[0, 1] for mit...
+  K_grid=3 (near 1D)                    72.97% ± 2.81%  (0.7m)
+    [cache miss] Building K=10 hom_dim=[0, 1] for mit...
+  K_grid=10 (half)                      59.38% ± 5.25%  (0.5m)
+    [cache miss] Building K=20 hom_dim=[0] for mit...
+  H0 only (components)                  64.17% ± 7.02%  (0.7m)
+    [cache miss] Building K=20 hom_dim=[1] for mit...
+  H1 only (loops)                       68.35% ± 3.25%  (1.1m)
+  GIN depth=1                           67.58% ± 6.03%  (0.5m)
+  GIN depth=2                           70.87% ± 2.49%  (0.6m)
+  GIN depth=4                           73.74% ± 5.57%  (0.8m)
+  No label smoothing                    68.87% ± 2.64%  (0.5m)
+  No LR scheduler                       70.14% ± 0.65%  (0.3m)
+  Saved → ./results/ablation/ablation_mit.json
+
+=================================================================
+DATASET: HIGHSCHOOL
+=================================================================
+Classes: 2 | Best params: {'lr': 0.01, 'gin_dropout': 0.5, 'gin_hidden': 64}
+  Full TCBG                             62.56% ± 1.59%  (0.9m)
+  w/o Global Features                   61.89% ± 2.76%  (1.2m)
+  w/o JK-Max                            57.44% ± 2.69%  (1.1m)
+    [cache miss] Building K=1 hom_dim=[0, 1] for highschool...
+  w/o Curvature κ (K=1)                 56.22% ± 2.21%  (1.2m)
+  w/o Global + JK-Max                   57.44% ± 2.27%  (1.7m)
+    [cache miss] Building K=3 hom_dim=[0, 1] for highschool...
+  K_grid=3 (near 1D)                    62.78% ± 5.59%  (0.9m)
+    [cache miss] Building K=10 hom_dim=[0, 1] for highschool...
+  K_grid=10 (half)                      58.33% ± 4.27%  (0.9m)
+    [cache miss] Building K=20 hom_dim=[0] for highschool...
+  H0 only (components)                  64.89% ± 3.81%  (1.5m)
+    [cache miss] Building K=20 hom_dim=[1] for highschool...
+  H1 only (loops)                       61.33% ± 1.94%  (1.1m)
+  GIN depth=1                           64.44% ± 1.72%  (0.8m)
+  GIN depth=2                           61.44% ± 1.94%  (0.9m)
+  GIN depth=4                           62.78% ± 2.65%  (1.8m)
+  No label smoothing                    59.44% ± 2.41%  (1.3m)
+  No LR scheduler                       59.44% ± 1.83%  (1.4m)
+  Saved → ./results/ablation/ablation_highschool.json
+
+
+==========================================================================================
+                                     ABLATION SUMMARY                                     
+==========================================================================================
+Variant                             infectious       dblp     tumblr        mit highschool
+------------------------------------------------------------------------------------------
+
+── Group 1: Core components ──
+  Full TCBG                            69.80%    93.70%    56.57%    69.84%    62.56%
+  w/o Global Features                  66.60%    88.45%    56.89%    72.08%    61.89%
+  w/o JK-Max                           73.20%    93.93%    55.29%    68.83%    57.44%
+  w/o Curvature κ (K=1)                80.00%    92.29%    59.78%    69.05%    56.22%
+  w/o Global + JK-Max                  67.30%    88.45%    52.49%    68.22%    57.44%
+
+── Group 2: Curvature resolution ──
+  K_grid=3 (near 1D)                   76.40%    93.54%    59.73%    72.97%    62.78%
+  K_grid=10 (half)                     72.20%    92.58%    57.75%    59.38%    58.33%
+
+── Group 3: Homology dim ──
+  H0 only (components)                 71.10%    92.48%    58.19%    64.17%    64.89%
+  H1 only (loops)                      72.50%    89.91%    58.02%    68.35%    61.33%
+
+── Group 4: GIN depth ──
+  GIN depth=1                          75.80%    93.99%    58.06%    67.58%    64.44%
+  GIN depth=2                          72.90%    94.01%    59.45%    70.87%    61.44%
+  GIN depth=4                          69.90%    93.72%    57.10%    73.74%    62.78%
+
+── Group 5: Training ──
+  No label smoothing                   69.70%    93.46%    56.68%    68.87%    59.44%
+  No LR scheduler                      72.10%    93.30%    58.81%    70.14%    59.44%
+
+Ablation summary → ./results/ablation/ablation_summary.json

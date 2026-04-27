@@ -1,0 +1,69 @@
+TCBG Fair Eval | device=cuda | seeds=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Datasets: ['infectious', 'dblp', 'tumblr', 'mit', 'highschool']
+
+============================================================  infectious  (num_classes=2)
+  seed=0  acc=70.50%  (44s)
+  seed=1  acc=68.00%  (36s)
+  seed=2  acc=63.50%  (43s)
+  seed=3  acc=64.00%  (36s)
+  seed=4  acc=66.00%  (45s)
+  seed=5  acc=65.50%  (35s)
+  seed=6  acc=70.50%  (47s)
+  seed=7  acc=73.00%  (48s)
+  seed=8  acc=69.50%  (49s)
+  seed=9  acc=68.00%  (39s)
+  TCBG Fair: 67.85% ± 2.93%
+
+============================================================  dblp  (num_classes=2)
+  seed=0  acc=90.86%  (89s)
+  seed=1  acc=86.36%  (68s)
+  seed=2  acc=88.74%  (105s)
+  seed=3  acc=89.40%  (81s)
+  seed=4  acc=88.34%  (85s)
+  seed=5  acc=90.46%  (83s)
+  seed=6  acc=90.07%  (89s)
+  seed=7  acc=90.33%  (84s)
+  seed=8  acc=88.34%  (93s)
+  seed=9  acc=89.80%  (88s)
+  TCBG Fair: 89.27% ± 1.28%
+
+============================================================  tumblr  (num_classes=2)
+  seed=0  acc=56.03%  (46s)
+  seed=1  acc=53.35%  (39s)
+  seed=2  acc=56.82%  (49s)
+  seed=3  acc=59.79%  (38s)
+  seed=4  acc=57.63%  (42s)
+  seed=5  acc=57.36%  (40s)
+  seed=6  acc=58.48%  (46s)
+  seed=7  acc=59.50%  (39s)
+  seed=8  acc=59.78%  (45s)
+  seed=9  acc=59.51%  (37s)
+  TCBG Fair: 57.83% ± 1.96%
+
+============================================================  mit  (num_classes=2)
+  seed=0  acc=69.37%  (31s)
+  seed=1  acc=63.16%  (25s)
+  seed=2  acc=57.89%  (23s)
+  seed=3  acc=62.89%  (35s)
+  seed=4  acc=58.95%  (24s)
+  seed=5  acc=57.84%  (28s)
+  seed=6  acc=67.89%  (30s)
+  seed=7  acc=61.53%  (23s)
+  seed=8  acc=57.79%  (26s)
+  seed=9  acc=59.89%  (31s)
+  TCBG Fair: 61.72% ± 3.95%
+
+============================================================  highschool  (num_classes=2)
+  seed=0  acc=64.44%  (29s)
+  seed=1  acc=51.67%  (40s)
+  seed=2  acc=58.33%  (29s)
+  seed=3  acc=63.33%  (41s)
+  seed=4  acc=58.89%  (33s)
+  seed=5  acc=55.00%  (36s)
+  seed=6  acc=58.33%  (35s)
+  seed=7  acc=60.00%  (41s)
+  seed=8  acc=52.78%  (26s)
+  seed=9  acc=62.78%  (39s)
+  TCBG Fair: 58.56% ± 4.14%
+
+Saved -> /nas/home/jahin/TCBG_fair_eval/results/tcbg_fair/fair_comparison.json

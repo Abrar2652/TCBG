@@ -1,0 +1,67 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+T3Former Brain Fair Eval | device=cuda | epochs=50
+Protocol: 70/10/20 split × 10 seeds
+
+
+============================================================  DynHCPActivity
+  n=7443  classes=7  sage_dim=100  betti=(7443, 34, 3)  dos=(7443, 34, 4)
+  [skip grid] using defaults lr=0.005 h=32 drop=0.3
+
+--- Phase 2: Full (10 seeds) ---
+  seed=0  acc=87.24%
+  seed=1  acc=82.94%
+  seed=2  acc=89.46%
+  seed=3  acc=88.05%
+  seed=4  acc=82.87%
+  seed=5  acc=85.22%
+  seed=6  acc=87.58%
+  seed=7  acc=78.51%
+  seed=8  acc=87.51%
+  seed=9  acc=87.64%
+
+  T3Former Fair:  85.70% ± 3.16%
+  T3Former Paper: 90.76%
+
+============================================================  DynHCPGender
+  n=1080  classes=2  sage_dim=100  betti=(1080, 34, 3)  dos=(1080, 34, 4)
+  [skip grid] using defaults lr=0.005 h=32 drop=0.3
+
+--- Phase 2: Full (10 seeds) ---
+  seed=0  acc=51.39%
+  seed=1  acc=67.59%
+  seed=2  acc=58.33%
+  seed=3  acc=56.48%
+  seed=4  acc=64.81%
+  seed=5  acc=60.19%
+  seed=6  acc=69.91%
+  seed=7  acc=63.89%
+  seed=8  acc=66.20%
+  seed=9  acc=51.39%
+
+  T3Former Fair:  61.02% ± 6.21%
+  T3Former Paper: 75.79%
+
+============================================================  DynHCPAge
+Downloading https://vanderbilt.box.com/shared/static/195f9teg4t4apn6kl6hbc4ib4g9addtq.zip
+Extracting /nas/ckgfs/jaunts/jahin/tcbg_data/brain/DynHCPAge/195f9teg4t4apn6kl6hbc4ib4g9addtq.zip
+  n=1067  classes=3  sage_dim=100  betti=(1067, 34, 3)  dos=(1067, 34, 10)
+  [skip grid] using defaults lr=0.005 h=32 drop=0.3
+
+--- Phase 2: Full (10 seeds) ---
+  seed=0  acc=38.32%
+  seed=1  acc=37.85%
+  seed=2  acc=40.19%
+  seed=3  acc=42.99%
+  seed=4  acc=38.79%
+  seed=5  acc=35.05%
+  seed=6  acc=33.18%
+  seed=7  acc=42.06%
+  seed=8  acc=42.52%
+  seed=9  acc=41.59%
+Traceback (most recent call last):
+  File "/nas/home/jahin/TCBG_fair_eval/run_t3former_brain_fair.py", line 205, in <module>
+    main()
+  File "/nas/home/jahin/TCBG_fair_eval/run_t3former_brain_fair.py", line 195, in main
+    json.dump(res, open(out_file, 'w'), indent=2)
+FileNotFoundError: [Errno 2] No such file or directory: '/nas/home/jahin/TCBG_fair_eval/results/t3former_brain_fair/DynHCPAge_fair.json'

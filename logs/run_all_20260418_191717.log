@@ -1,0 +1,41 @@
+Cloning TempGNTK repo...
+
+>>> git clone https://github.com/kthrn22/TempGNTK.git /nas/home/jahin/TCBG_fair_eval/TempGNTK_repo
+
+Cloning into '/nas/home/jahin/TCBG_fair_eval/TempGNTK_repo'...
+
+============================================================
+RUNNING: TempGNTK Fair Eval
+============================================================
+
+>>> /usr/bin/python3 /nas/home/jahin/TCBG_fair_eval/run_tempgntk_fair.py --device cuda
+
+TempGNTK Fair Eval | device=cuda
+Protocol: StratifiedKFold(5) x 10 seeds
+
+
+============================================================
+DATASET: infectious_ct1
+============================================================
+Traceback (most recent call last):
+  File "/nas/home/jahin/TCBG_fair_eval/run_tempgntk_fair.py", line 179, in <module>
+    main()
+  File "/nas/home/jahin/TCBG_fair_eval/run_tempgntk_fair.py", line 167, in main
+    m, s = run_dataset(ds, device)
+  File "/nas/home/jahin/TCBG_fair_eval/run_tempgntk_fair.py", line 117, in run_dataset
+    graphs, labels = load_dataset(dataset)
+  File "/nas/home/jahin/TCBG_fair_eval/run_tempgntk_fair.py", line 60, in load_dataset
+    from utils_graph_classification import readTUds, temporal_graph_from_TUds
+  File "/nas/home/jahin/TCBG_fair_eval/TempGNTK_repo/utils_graph_classification.py", line 7, in <module>
+    import torch_scatter
+ModuleNotFoundError: No module named 'torch_scatter'
+Traceback (most recent call last):
+  File "/nas/home/jahin/TCBG_fair_eval/run_all.py", line 75, in <module>
+    main()
+  File "/nas/home/jahin/TCBG_fair_eval/run_all.py", line 52, in main
+    run([sys.executable, str(HERE / 'run_tempgntk_fair.py'),
+  File "/nas/home/jahin/TCBG_fair_eval/run_all.py", line 28, in run
+    subprocess.run(cmd, check=True)
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '/nas/home/jahin/TCBG_fair_eval/run_tempgntk_fair.py', '--device', 'cuda']' returned non-zero exit status 1.

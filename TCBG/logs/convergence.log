@@ -1,0 +1,171 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda | Seeds: [0, 1, 2, 3, 4] | Epochs: 200
+
+
+=======================================================  INFECTIOUS  =======================================================
+Config: lr=0.005  dropout=0.0  hidden=32  nc=2
+  seed=0 fold=1  best_test=72.50%  converged@ep24/54
+  seed=0 fold=2  best_test=67.50%  converged@ep9/39
+  seed=0 fold=3  best_test=75.00%  converged@ep20/50
+  seed=0 fold=4  best_test=77.50%  converged@ep77/107
+  seed=0 fold=5  best_test=70.00%  converged@ep17/47
+  seed=1 fold=1  best_test=75.00%  converged@ep20/50
+  seed=1 fold=2  best_test=60.00%  converged@ep20/50
+  seed=1 fold=3  best_test=75.00%  converged@ep32/62
+  seed=1 fold=4  best_test=70.00%  converged@ep16/46
+  seed=1 fold=5  best_test=72.50%  converged@ep26/56
+  seed=2 fold=1  best_test=65.00%  converged@ep26/56
+  seed=2 fold=2  best_test=70.00%  converged@ep18/48
+  seed=2 fold=3  best_test=70.00%  converged@ep10/40
+  seed=2 fold=4  best_test=70.00%  converged@ep21/51
+  seed=2 fold=5  best_test=77.50%  converged@ep24/54
+  seed=3 fold=1  best_test=67.50%  converged@ep26/56
+  seed=3 fold=2  best_test=72.50%  converged@ep13/43
+  seed=3 fold=3  best_test=67.50%  converged@ep15/45
+  seed=3 fold=4  best_test=85.00%  converged@ep29/59
+  seed=3 fold=5  best_test=77.50%  converged@ep22/52
+  seed=4 fold=1  best_test=77.50%  converged@ep33/63
+  seed=4 fold=2  best_test=72.50%  converged@ep20/50
+  seed=4 fold=3  best_test=67.50%  converged@ep22/52
+  seed=4 fold=4  best_test=75.00%  converged@ep19/49
+  seed=4 fold=5  best_test=67.50%  converged@ep22/52
+
+  SUMMARY: 71.90% ± 5.06%  converged @ ep 23.2 ± 12.4  (avg 53 total epochs)
+  Saved → ./results/convergence/convergence_infectious.json
+
+=======================================================  DBLP  =======================================================
+Config: lr=0.005  dropout=0.0  hidden=64  nc=2
+  seed=0 fold=1  best_test=94.04%  converged@ep54/84
+  seed=0 fold=2  best_test=95.36%  converged@ep72/102
+  seed=0 fold=3  best_test=92.05%  converged@ep96/126
+  seed=0 fold=4  best_test=92.72%  converged@ep30/60
+  seed=0 fold=5  best_test=94.70%  converged@ep72/102
+  seed=1 fold=1  best_test=92.72%  converged@ep59/89
+  seed=1 fold=2  best_test=94.04%  converged@ep50/80
+  seed=1 fold=3  best_test=93.38%  converged@ep47/77
+  seed=1 fold=4  best_test=91.39%  converged@ep22/52
+  seed=1 fold=5  best_test=95.36%  converged@ep26/56
+  seed=2 fold=1  best_test=93.38%  converged@ep46/76
+  seed=2 fold=2  best_test=94.04%  converged@ep59/89
+  seed=2 fold=3  best_test=88.74%  converged@ep12/42
+  seed=2 fold=4  best_test=90.07%  converged@ep36/66
+  seed=2 fold=5  best_test=94.70%  converged@ep69/99
+  seed=3 fold=1  best_test=95.36%  converged@ep17/47
+  seed=3 fold=2  best_test=95.36%  converged@ep68/98
+  seed=3 fold=3  best_test=96.69%  converged@ep84/114
+  seed=3 fold=4  best_test=90.73%  converged@ep24/54
+  seed=3 fold=5  best_test=92.72%  converged@ep72/102
+  seed=4 fold=1  best_test=94.04%  converged@ep42/72
+  seed=4 fold=2  best_test=94.70%  converged@ep41/71
+  seed=4 fold=3  best_test=92.05%  converged@ep38/68
+  seed=4 fold=4  best_test=94.04%  converged@ep44/74
+  seed=4 fold=5  best_test=96.03%  converged@ep70/100
+
+  SUMMARY: 93.54% ± 1.89%  converged @ ep 50.0 ± 21.4  (avg 80 total epochs)
+  Saved → ./results/convergence/convergence_dblp.json
+
+=======================================================  TUMBLR  =======================================================
+Config: lr=0.01  dropout=0.3  hidden=128  nc=2
+  seed=0 fold=1  best_test=58.67%  converged@ep35/65
+  seed=0 fold=2  best_test=57.33%  converged@ep6/36
+  seed=0 fold=3  best_test=54.67%  converged@ep8/38
+  seed=0 fold=4  best_test=55.41%  converged@ep5/35
+  seed=0 fold=5  best_test=59.46%  converged@ep13/43
+  seed=1 fold=1  best_test=64.00%  converged@ep28/58
+  seed=1 fold=2  best_test=57.33%  converged@ep3/33
+  seed=1 fold=3  best_test=64.00%  converged@ep15/45
+  seed=1 fold=4  best_test=48.65%  converged@ep17/47
+  seed=1 fold=5  best_test=56.76%  converged@ep22/52
+  seed=2 fold=1  best_test=50.67%  converged@ep5/35
+  seed=2 fold=2  best_test=56.00%  converged@ep7/37
+  seed=2 fold=3  best_test=54.67%  converged@ep32/62
+  seed=2 fold=4  best_test=55.41%  converged@ep7/37
+  seed=2 fold=5  best_test=74.32%  converged@ep12/42
+  seed=3 fold=1  best_test=56.00%  converged@ep26/56
+  seed=3 fold=2  best_test=50.67%  converged@ep23/53
+  seed=3 fold=3  best_test=49.33%  converged@ep10/40
+  seed=3 fold=4  best_test=62.16%  converged@ep18/48
+  seed=3 fold=5  best_test=56.76%  converged@ep20/50
+  seed=4 fold=1  best_test=56.00%  converged@ep6/36
+  seed=4 fold=2  best_test=50.67%  converged@ep15/45
+  seed=4 fold=3  best_test=62.67%  converged@ep25/55
+  seed=4 fold=4  best_test=55.41%  converged@ep12/42
+  seed=4 fold=5  best_test=55.41%  converged@ep8/38
+
+  SUMMARY: 56.90% ± 5.44%  converged @ ep 15.1 ± 9.0  (avg 45 total epochs)
+  Saved → ./results/convergence/convergence_tumblr.json
+
+=======================================================  MIT  =======================================================
+Config: lr=0.01  dropout=0.3  hidden=64  nc=2
+  seed=0 fold=1  best_test=85.00%  converged@ep49/79
+  seed=0 fold=2  best_test=65.00%  converged@ep50/80
+  seed=0 fold=3  best_test=73.68%  converged@ep20/50
+  seed=0 fold=4  best_test=47.37%  converged@ep1/31
+  seed=0 fold=5  best_test=73.68%  converged@ep95/125
+  seed=1 fold=1  best_test=80.00%  converged@ep62/92
+  seed=1 fold=2  best_test=75.00%  converged@ep25/55
+  seed=1 fold=3  best_test=57.89%  converged@ep33/63
+  seed=1 fold=4  best_test=42.11%  converged@ep27/57
+  seed=1 fold=5  best_test=68.42%  converged@ep2/32
+  seed=2 fold=1  best_test=45.00%  converged@ep32/62
+  seed=2 fold=2  best_test=75.00%  converged@ep19/49
+  seed=2 fold=3  best_test=57.89%  converged@ep23/53
+  seed=2 fold=4  best_test=63.16%  converged@ep24/54
+  seed=2 fold=5  best_test=73.68%  converged@ep25/55
+  seed=3 fold=1  best_test=70.00%  converged@ep12/42
+  seed=3 fold=2  best_test=95.00%  converged@ep18/48
+  seed=3 fold=3  best_test=68.42%  converged@ep60/90
+  seed=3 fold=4  best_test=78.95%  converged@ep47/77
+  seed=3 fold=5  best_test=57.89%  converged@ep32/62
+  seed=4 fold=1  best_test=65.00%  converged@ep9/39
+  seed=4 fold=2  best_test=65.00%  converged@ep5/35
+  seed=4 fold=3  best_test=63.16%  converged@ep34/64
+  seed=4 fold=4  best_test=84.21%  converged@ep21/51
+  seed=4 fold=5  best_test=63.16%  converged@ep64/94
+
+  SUMMARY: 67.75% ± 12.28%  converged @ ep 31.6 ± 21.8  (avg 62 total epochs)
+  Saved → ./results/convergence/convergence_mit.json
+
+=======================================================  HIGHSCHOOL  =======================================================
+Config: lr=0.01  dropout=0.5  hidden=64  nc=2
+  seed=0 fold=1  best_test=66.67%  converged@ep10/40
+  seed=0 fold=2  best_test=44.44%  converged@ep14/44
+  seed=0 fold=3  best_test=63.89%  converged@ep23/53
+  seed=0 fold=4  best_test=61.11%  converged@ep10/40
+  seed=0 fold=5  best_test=58.33%  converged@ep9/39
+  seed=1 fold=1  best_test=41.67%  converged@ep31/61
+  seed=1 fold=2  best_test=66.67%  converged@ep26/56
+  seed=1 fold=3  best_test=61.11%  converged@ep52/82
+  seed=1 fold=4  best_test=61.11%  converged@ep8/38
+  seed=1 fold=5  best_test=75.00%  converged@ep16/46
+  seed=2 fold=1  best_test=72.22%  converged@ep23/53
+  seed=2 fold=2  best_test=63.89%  converged@ep27/57
+  seed=2 fold=3  best_test=58.33%  converged@ep22/52
+  seed=2 fold=4  best_test=58.33%  converged@ep18/48
+  seed=2 fold=5  best_test=63.89%  converged@ep23/53
+  seed=3 fold=1  best_test=55.56%  converged@ep21/51
+  seed=3 fold=2  best_test=50.00%  converged@ep1/31
+  seed=3 fold=3  best_test=50.00%  converged@ep41/71
+  seed=3 fold=4  best_test=72.22%  converged@ep25/55
+  seed=3 fold=5  best_test=69.44%  converged@ep59/89
+  seed=4 fold=1  best_test=75.00%  converged@ep18/48
+  seed=4 fold=2  best_test=69.44%  converged@ep36/66
+  seed=4 fold=3  best_test=66.67%  converged@ep16/46
+  seed=4 fold=4  best_test=50.00%  converged@ep21/51
+  seed=4 fold=5  best_test=61.11%  converged@ep12/42
+
+  SUMMARY: 61.44% ± 8.87%  converged @ ep 22.5 ± 13.1  (avg 52 total epochs)
+  Saved → ./results/convergence/convergence_highschool.json
+
+
+=======================================================
+                  CONVERGENCE SUMMARY                  
+=======================================================
+  infectious  :  71.90%
+  dblp        :  93.54%
+  tumblr      :  56.90%
+  mit         :  67.75%
+  highschool  :  61.44%
+
+All convergence data → ./results/convergence/

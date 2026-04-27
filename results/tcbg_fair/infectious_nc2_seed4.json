@@ -1,0 +1,13 @@
+{
+  "dataset": "infectious",
+  "num_classes": 2,
+  "fold_accs": [
+    0.65,
+    0.55,
+    0.675,
+    0.775,
+    0.65
+  ],
+  "mean_acc": 0.66,
+  "std_acc": 0.07176350047203661
+}

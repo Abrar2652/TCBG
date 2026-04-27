@@ -1,0 +1,17 @@
+TCBG Fair Eval | device=cuda | seeds=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Datasets: ['facebook']
+
+============================================================  facebook  (num_classes=2)
+  seed=0  acc=65.13%  (152s)
+  seed=1  acc=71.26%  (140s)
+  seed=2  acc=69.15%  (144s)
+  seed=3  acc=72.16%  (146s)
+  seed=4  acc=72.86%  (189s)
+  seed=5  acc=68.04%  (128s)
+  seed=6  acc=73.27%  (163s)
+  seed=7  acc=68.04%  (140s)
+  seed=8  acc=72.96%  (148s)
+  seed=9  acc=69.05%  (142s)
+  TCBG Fair: 70.19% ± 2.58%
+
+Saved -> /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/fair_comparison.json

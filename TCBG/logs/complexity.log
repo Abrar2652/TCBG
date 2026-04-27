@@ -1,0 +1,74 @@
+/nas/home/jahin/.local/lib/python3.10/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (1.26.5) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Device: cuda
+
+
+──────────────────────────────────────────────────  INFECTIOUS  ──────────────────────────────────────────────────
+  [training & inference timing]
+    Params:            9,893
+    Epoch time:        29.0 ± 1.0 ms
+    Full 5-fold train: 7.8s  (avg 52 ep/fold)
+    Inference:         0.1102 ms/graph
+    Peak GPU:          57.0 MB
+  [scalability analysis]
+    n=  50 (25%)  epoch=10.8ms
+    n= 100 (50%)  epoch=21.5ms
+    n= 150 (75%)  epoch=29.6ms
+    n= 200 (100%)  epoch=40.8ms
+
+──────────────────────────────────────────────────  DBLP  ──────────────────────────────────────────────────
+  [training & inference timing]
+    Params:            36,165
+    Epoch time:        98.9 ± 4.2 ms
+    Full 5-fold train: 45.3s  (avg 73 ep/fold)
+    Inference:         0.0969 ms/graph
+    Peak GPU:          88.5 MB
+  [scalability analysis]
+    n= 188 (25%)  epoch=114.2ms
+    n= 377 (50%)  epoch=230.6ms
+    n= 566 (75%)  epoch=344.4ms
+    n= 755 (100%)  epoch=458.9ms
+
+──────────────────────────────────────────────────  TUMBLR  ──────────────────────────────────────────────────
+  [training & inference timing]
+    Params:            137,861
+    Epoch time:        156.1 ± 1.3 ms
+    Full 5-fold train: 19.3s  (avg 51 ep/fold)
+    Inference:         0.1056 ms/graph
+    Peak GPU:          192.7 MB
+  [scalability analysis]
+    n=  93 (25%)  epoch=20.4ms
+    n= 186 (50%)  epoch=36.6ms
+    n= 279 (75%)  epoch=58.0ms
+    n= 373 (100%)  epoch=75.5ms
+
+──────────────────────────────────────────────────  MIT  ──────────────────────────────────────────────────
+  [training & inference timing]
+  [scalability analysis]
+
+──────────────────────────────────────────────────  HIGHSCHOOL  ──────────────────────────────────────────────────
+  [training & inference timing]
+    Params:            36,165
+    Epoch time:        25.2 ± 0.7 ms
+    Full 5-fold train: 7.7s  (avg 45 ep/fold)
+    Inference:         0.1250 ms/graph
+    Peak GPU:          106.1 MB
+  [scalability analysis]
+    n=  45 (25%)  epoch=11.7ms
+    n=  90 (50%)  epoch=19.2ms
+    n= 135 (75%)  epoch=29.5ms
+    n= 180 (100%)  epoch=38.7ms
+
+
+====================================================================================================
+                                         COMPLEXITY SUMMARY                                         
+====================================================================================================
+Dataset        Graphs     Params   Preproc(s/g)   Ep(ms)  5-fold(s)   Infer(ms/g)   GPU(MB)
+----------------------------------------------------------------------------------------------------
+infectious        200      9,893              -     29.0        7.8        0.1102      57.0
+dblp              755     36,165              -     98.9       45.3        0.0969      88.5
+tumblr            373    137,861              -    156.1       19.3        0.1056     192.7
+mit                 -          -              -        -          -             -         -
+highschool        180     36,165              -     25.2        7.7        0.1250     106.1
+
+Saved → ./results/complexity/complexity_results.json

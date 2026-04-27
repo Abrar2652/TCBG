@@ -1,0 +1,43 @@
+TCBG Fair Eval | device=cuda | seeds=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Datasets: ['dynhcp_task', 'dynhcp_gender', 'dynhcp_age']
+
+============================================================  dynhcp_task  (num_classes=7)
+  seed=0  acc=31.90%  (2185s)
+  seed=1  acc=26.53%  (101s)
+  seed=2  acc=29.42%  (106s)
+  seed=3  acc=24.98%  (141s)
+  seed=4  acc=18.60%  (107s)
+  seed=5  acc=31.50%  (162s)
+  seed=6  acc=15.25%  (121s)
+  seed=7  acc=22.70%  (160s)
+  seed=8  acc=27.07%  (185s)
+  seed=9  acc=35.26%  (193s)
+  TCBG Fair: 26.32% ± 5.87%
+
+============================================================  dynhcp_gender  (num_classes=2)
+  seed=0  acc=59.26%  (331s)
+  seed=1  acc=62.50%  (51s)
+  seed=2  acc=52.78%  (31s)
+  seed=3  acc=56.94%  (43s)
+  seed=4  acc=53.70%  (42s)
+  seed=5  acc=56.48%  (39s)
+  seed=6  acc=52.31%  (33s)
+  seed=7  acc=50.46%  (39s)
+  seed=8  acc=55.09%  (34s)
+  seed=9  acc=52.31%  (39s)
+  TCBG Fair: 55.19% ± 3.49%
+
+============================================================  dynhcp_age  (num_classes=3)
+  seed=0  acc=43.72%  (303s)
+  seed=1  acc=41.86%  (36s)
+  seed=2  acc=44.65%  (38s)
+  seed=3  acc=46.51%  (34s)
+  seed=4  acc=40.93%  (31s)
+  seed=5  acc=46.98%  (40s)
+  seed=6  acc=41.86%  (33s)
+  seed=7  acc=42.79%  (38s)
+  seed=8  acc=42.79%  (30s)
+  seed=9  acc=47.44%  (38s)
+  TCBG Fair: 43.95% ± 2.21%
+
+Saved -> /nas/ckgfs/jaunts/jahin/TCBG_fair_eval/results/tcbg_fair/fair_comparison.json

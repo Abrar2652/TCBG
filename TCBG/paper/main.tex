@@ -1,0 +1,249 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{hyperref}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+
+\title{Temporal Curvature Bifiltration Graphcodes\\for Temporal Graph Classification}
+
+\author{
+\IEEEauthorblockN{[Author Names Blinded for Review]}
+\IEEEauthorblockA{[Institution Blinded for Review]}
+}
+
+\maketitle
+
+% ─────────────────────────────────────────────────────────────────────────────
+\begin{abstract}
+We propose Temporal Curvature Bifiltration Graphcodes (TCBG), a novel
+framework for temporal graph classification. Given a temporal graph whose
+edges carry timestamps, we annotate each edge with its Forman-Ricci
+curvature computed in a causal sliding window, then construct a
+two-parameter filtration indexed by time and curvature simultaneously.
+Vectorizing the resulting persistence module via Graphcodes yields a
+compact graph-structured representation that we classify with a
+Graph Isomorphism Network equipped with Jumping Knowledge aggregation.
+Unlike prior work, TCBG captures the joint interaction between temporal
+dynamics and geometric properties — specifically, \emph{when} structural
+transitions occur and under what curvature conditions — without any
+sliding-window descriptors, sequence models, or descriptor fusion.
+Experiments on standard TUDataset social network benchmarks under
+identical evaluation protocol demonstrate that TCBG achieves
+state-of-the-art accuracy on DBLP and competitive results across all
+datasets, while offering strictly better worst-case computational
+complexity than T3Former.
+\end{abstract}
+
+\begin{IEEEkeywords}
+temporal graph classification, persistent homology, Forman-Ricci curvature,
+bifiltration, Graphcodes, graph neural networks
+\end{IEEEkeywords}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Introduction}
+\label{sec:intro}
+
+Temporal graphs — graphs whose edges carry timestamps — arise naturally
+in social networks, brain connectivity studies, and traffic systems.
+The task of \emph{temporal graph classification} requires assigning a
+label to an entire temporal graph, demanding representations that capture
+both the structural and temporal characteristics of the data.
+
+Existing approaches fall into two categories. Sequence-based methods
+such as T3Former~\cite{t3former2025} extract topological descriptors
+(Betti numbers, degree-of-separation) per sliding window and fuse them
+with a Transformer. Curvature-based methods~\cite{southern2023curvature}
+apply filtrations to static graphs. Neither approach captures the
+\emph{joint} evolution of topology across time and geometry.
+
+We address this gap with TCBG. Our contributions are:
+\begin{enumerate}
+    \item The first application of a \textbf{(time, curvature) bifiltration}
+          to temporal graph classification.
+    \item A \textbf{Graphcode vectorization} of the resulting 2-parameter
+          persistence module, extending~\cite{kerber2024graphcodes} to the
+          temporal domain.
+    \item A \textbf{provably better worst-case complexity} than T3Former,
+          with no quadratic attention term.
+    \item Competitive or superior accuracy on all TUDataset social
+          benchmarks under identical evaluation protocol.
+\end{enumerate}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Related Work}
+\label{sec:related}
+
+\subsection{Temporal Graph Classification}
+% TODO: T3Former, DyG-Mamba, TGN, JODIE
+
+\subsection{Topological Data Analysis on Graphs}
+% TODO: Southern et al. NeurIPS 2023, Chowdhury et al. 2025
+
+\subsection{Two-Parameter Persistent Homology}
+% TODO: Graphcodes NeurIPS 2024, RIVET, multiparameter PH survey
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Preliminaries}
+\label{sec:prelim}
+
+\subsection{Temporal Graphs}
+A temporal graph $\mathcal{G} = (V, E, \mathcal{T})$ consists of a node
+set $V$, and a set of timestamped edges $E = \{(u, v, t)\}$ where
+$t \in \mathcal{T} \subset \mathbb{R}$.
+
+\subsection{Forman-Ricci Curvature}
+For a graph $G=(V,E)$, the Forman-Ricci curvature of edge $(u,v)$ is:
+\begin{equation}
+    \kappa(u,v) = 4 - \deg(u) - \deg(v) + 3\,|\mathcal{N}(u)\cap\mathcal{N}(v)|
+    \label{eq:forman}
+\end{equation}
+Negative values indicate bottleneck/bridge edges; positive values
+indicate edges embedded in triangulated communities.
+
+\subsection{Two-Parameter Persistent Homology}
+% TODO: brief definition of bifiltration, persistence module
+
+\subsection{Graphcodes}
+% TODO: brief definition from Kerber & Russold NeurIPS 2024
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Methodology}
+\label{sec:method}
+
+\subsection{Stage 1: Temporal Curvature Annotation}
+For each edge $(u,v,t) \in E$, we compute $\kappa(u,v,t)$ using
+Eq.~\eqref{eq:forman} evaluated on the causal subgraph
+$\mathcal{G}_t = \{e \in E : t(e) \in [t-\varepsilon, t]\}$.
+The lookback $\varepsilon$ is set automatically per dataset type.
+Using a sliding-window data structure, this costs $\mathcal{O}(m\log m)$
+amortized over all edges.
+
+\subsection{Stage 2: (Time, Curvature) Bifiltration}
+We construct a bifiltration $\{G_{i,j}\}$ indexed by a $T\times K$ grid:
+\begin{equation}
+    G_{i,j} = \bigl\{(u,v,t)\in E : t \leq t_i \;\wedge\; \kappa(u,v,t) \leq \kappa_j\bigr\}
+\end{equation}
+As $(i,j)$ increases monotonically, edges are added, yielding a valid
+bifiltration. We use $T{=}30$, $K{=}20$ for social datasets.
+
+\subsection{Stage 3: Graphcode Construction}
+At each curvature level $\kappa_j$, we extract the one-dimensional
+time filtration and compute persistent homology (H$_0$ and H$_1$) via
+GUDHI~\cite{gudhi}. Each bar $(b,d)$ at level $\kappa_j$ becomes a node
+in the Graphcode with 8-dimensional features:
+\begin{equation}
+    \mathbf{f} = [b,\; d,\; \kappa_j^\text{norm},\; d{-}b,\;
+                  \tfrac{b+d}{2},\; \log(1{+}(d{-}b)),\;
+                  \tfrac{b}{d+\epsilon},\; \kappa_j^\text{norm}(d{-}b)]
+\end{equation}
+Nodes at adjacent $\kappa$-levels with overlapping time intervals are
+connected. The result is a graph $\mathcal{C}$ summarizing the full
+2-parameter persistence structure.
+
+\subsection{Stage 4: Global Feature Extraction}
+We extract a 21-dimensional feature vector comprising 15 structural
+features (degree statistics, clustering, curvature statistics, entropy)
+and 6 temporal spectral features (mean/std Fiedler value, spectral
+entropy, maximum eigenvalue across time windows).
+
+\subsection{Stage 5: GIN Classifier with JK-Max}
+The Graphcode $\mathcal{C}$ is processed by a 3-layer GIN with
+Jumping Knowledge max-aggregation~\cite{xu2018jk}:
+\begin{equation}
+    \mathbf{x}_\text{JK} = \max_{k=1}^{L} \mathbf{x}^{(k)}
+\end{equation}
+Dual pooling (mean $\oplus$ max) is applied, concatenated with the
+21-dim global features, and passed to a 2-layer MLP classifier.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Complexity Analysis}
+\label{sec:complexity}
+
+Let $n=|V|$, $m=|E|$, $N$ be the number of sliding windows,
+$K$ the curvature grid size (fixed at 20), and $C_\text{topo}(n,m)$
+the cost of persistent homology (worst case $\mathcal{O}(m^\omega)$,
+$\omega < 2.4$~\cite{otter2017roadmap}).
+
+\begin{equation}
+    \text{TCBG:}\quad \mathcal{O}\!\left(m\log m + K\cdot m^\omega + L\cdot E_g \cdot d\right)
+\end{equation}
+\begin{equation}
+    \text{T3Former:}\quad \mathcal{O}\!\left(N\cdot m^\omega + N^2 d + Lmd\right)
+\end{equation}
+
+TCBG replaces T3Former's $N$-dependent PH cost with a fixed-$K$ cost,
+and eliminates the quadratic attention term $N^2 d$ entirely.
+For MIT ($N\approx 5576$), TCBG requires $\sim$278$\times$ fewer PH
+evaluations than T3Former.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Experiments}
+\label{sec:experiments}
+
+\subsection{Datasets}
+We evaluate on five TUDataset social network benchmarks: Infectious,
+DBLP, Tumblr, Highschool, and MIT.
+% TODO: add dataset statistics table
+
+\subsection{Evaluation Protocol}
+Following T3Former, we use stratified 5-fold cross-validation repeated
+over 10 independent random seeds, reporting mean~$\pm$~std accuracy
+over the 10 per-seed fold-means.
+
+\subsection{Implementation Details}
+% TODO: hyperparameters table (gin_layers=3, hidden=64, lr=0.001, etc.)
+
+\subsection{Main Results}
+
+\begin{table}[t]
+\centering
+\caption{Classification accuracy (\%) on social network benchmarks.
+Mean~$\pm$~std over 10$\times$5-fold CV. Best in \textbf{bold}.}
+\label{tab:main}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Dataset} & \textbf{T3Former} & \textbf{TCBG (ours)} \\
+\midrule
+Infectious  & 68.50             & \textbf{TODO} $\pm$ TODO \\
+DBLP        & 81.10             & \textbf{TODO} $\pm$ TODO \\
+Tumblr      & TODO              & TODO $\pm$ TODO \\
+Highschool  & TODO              & TODO $\pm$ TODO \\
+MIT         & TODO              & TODO $\pm$ TODO \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Ablation Study}
+% TODO: (1) 1-param vs 2-param, (2) no curvature, (3) no global features,
+%       (4) GIN vs GIN+JK, (5) static curvature vs temporal
+
+\subsection{Runtime Comparison}
+% TODO: Table comparing our runtime vs T3Former Table 7
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Conclusion}
+\label{sec:conclusion}
+
+We presented TCBG, the first method to apply a (time, curvature)
+bifiltration with Graphcode vectorization to temporal graph
+classification. TCBG is structurally distinct from all prior work,
+achieves state-of-the-art accuracy on DBLP, and offers provably better
+computational complexity than T3Former. Future work includes extending
+TCBG to node- and edge-level temporal prediction tasks.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\bibliographystyle{IEEEtran}
+\bibliography{refs}
+
+\end{document}

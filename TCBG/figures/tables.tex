@@ -1,0 +1,94 @@
+% ===== AUTO-GENERATED LATEX TABLES =====
+
+% --- Ablation Study ---
+\begin{table}[t]
+\centering
+\caption{Ablation study results (mean accuracy \%, 5 seeds $\times$ 5-fold CV).}
+\label{tab:ablation}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Variant} & \textbf{Infectious} & \textbf{DBLP} & \textbf{Tumblr} & \textbf{MIT} & \textbf{Highschool} \\
+\midrule
+\multicolumn{6}{l}{\textit{Core Components}} \\
+\quad Full TCBG & \textbf{69.8}$_{\pm1.9}$ & \textbf{93.7}$_{\pm0.3}$ & \textbf{56.6}$_{\pm1.5}$ & \textbf{69.8}$_{\pm2.9}$ & \textbf{62.6}$_{\pm1.6}$ \\
+\quad w/o Global Features & 66.6$_{\pm2.4}$ & 88.5$_{\pm0.6}$ & 56.9$_{\pm1.9}$ & 72.1$_{\pm3.6}$ & 61.9$_{\pm2.8}$ \\
+\quad w/o JK-Max & 73.2$_{\pm2.6}$ & 93.9$_{\pm0.5}$ & 55.3$_{\pm2.4}$ & 68.8$_{\pm3.8}$ & 57.4$_{\pm2.7}$ \\
+\quad w/o Curvature $\kappa$ (K=1) & 80.0$_{\pm2.1}$ & 92.3$_{\pm0.6}$ & 59.8$_{\pm1.0}$ & 69.1$_{\pm4.7}$ & 56.2$_{\pm2.2}$ \\
+\quad w/o Global + JK-Max & 67.3$_{\pm2.5}$ & 88.5$_{\pm0.5}$ & 52.5$_{\pm2.3}$ & 68.2$_{\pm3.3}$ & 57.4$_{\pm2.3}$ \\
+\midrule
+\multicolumn{6}{l}{\textit{Curvature Resolution}} \\
+\quad K_grid=3 (near 1D) & 76.4$_{\pm1.8}$ & 93.5$_{\pm0.6}$ & 59.7$_{\pm1.6}$ & 73.0$_{\pm2.8}$ & 62.8$_{\pm5.6}$ \\
+\quad K_grid=10 (half) & 72.2$_{\pm1.6}$ & 92.6$_{\pm0.5}$ & 57.8$_{\pm1.8}$ & 59.4$_{\pm5.3}$ & 58.3$_{\pm4.3}$ \\
+\midrule
+\multicolumn{6}{l}{\textit{Homology Dimension}} \\
+\quad H0 only (components) & 71.1$_{\pm3.1}$ & 92.5$_{\pm0.6}$ & 58.2$_{\pm1.4}$ & 64.2$_{\pm7.0}$ & 64.9$_{\pm3.8}$ \\
+\quad H1 only (loops) & 72.5$_{\pm0.6}$ & 89.9$_{\pm0.8}$ & 58.0$_{\pm0.9}$ & 68.3$_{\pm3.2}$ & 61.3$_{\pm1.9}$ \\
+\midrule
+\multicolumn{6}{l}{\textit{GIN Depth}} \\
+\quad GIN depth=1 & 75.8$_{\pm1.2}$ & 94.0$_{\pm0.7}$ & 58.1$_{\pm1.6}$ & 67.6$_{\pm6.0}$ & 64.4$_{\pm1.7}$ \\
+\quad GIN depth=2 & 72.9$_{\pm2.5}$ & 94.0$_{\pm0.2}$ & 59.5$_{\pm1.4}$ & 70.9$_{\pm2.5}$ & 61.4$_{\pm1.9}$ \\
+\quad GIN depth=4 & 69.9$_{\pm1.2}$ & 93.7$_{\pm0.5}$ & 57.1$_{\pm1.4}$ & 73.7$_{\pm5.6}$ & 62.8$_{\pm2.7}$ \\
+\midrule
+\multicolumn{6}{l}{\textit{Training Protocol}} \\
+\quad No label smoothing & 69.7$_{\pm2.1}$ & 93.5$_{\pm0.5}$ & 56.7$_{\pm1.3}$ & 68.9$_{\pm2.6}$ & 59.4$_{\pm2.4}$ \\
+\quad No LR scheduler & 72.1$_{\pm3.1}$ & 93.3$_{\pm0.5}$ & 58.8$_{\pm1.4}$ & 70.1$_{\pm0.7}$ & 59.4$_{\pm1.8}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- Sensitivity Analysis (Key Parameters) ---
+\begin{table}[t]
+\centering
+\caption{Sensitivity analysis. Accuracy (\%) on DBLP and Infectious as each parameter varies. $\star$ = default value used in main experiments.}
+\label{tab:sensitivity}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+\textbf{Parameter} & \textbf{Dataset} & \multicolumn{7}{c}{\textbf{Values}} \\
+\midrule
+T (time res.) & DBLP & 93.2 & 91.9 & 92.3 & 92.9 & 94.3$^\star$ & 92.1 & 92.3 \\
+ & Infectious & 77.0 & 77.3 & 75.7 & 73.3 & 70.3$^\star$ & 74.0 & 71.7 \\
+\midrule
+K (curvature res.) & DBLP & 91.5 & 92.4 & 92.2 & 92.7 & 93.5$^\star$ & 91.3 & 92.2 \\
+ & Infectious & 80.5 & 71.2 & 72.0 & 73.5 & 71.3$^\star$ & 70.7 & 72.5 \\
+\midrule
+min\_pers. & DBLP & 92.1 & 92.6 & 92.3 & 94.1$^\star$ & 93.0 & 92.4 & 91.7 \\
+ & Infectious & 77.2 & 74.8 & 75.3 & 71.0$^\star$ & 71.5 & 68.7 & 74.3 \\
+\midrule
+GIN layers & DBLP & 93.7 & 94.0 & 93.6$^\star$ & 92.8 & 92.8 & — & — \\
+ & Infectious & 72.8 & 71.7 & 69.7$^\star$ & 71.0 & 69.3 & — & — \\
+\midrule
+Hidden dim & DBLP & 93.2 & 94.0 & 93.7$^\star$ & 93.2 & 92.8 & — & — \\
+ & Infectious & 71.2 & 68.8 & 71.7$^\star$ & 67.7 & 66.7 & — & — \\
+\midrule
+Dropout & DBLP & 93.5 & 93.6 & 91.4 & 91.3$^\star$ & 77.7 & — & — \\
+ & Infectious & 70.8 & 71.0 & 71.0 & 70.2$^\star$ & 69.3 & — & — \\
+\midrule
+LR & DBLP & 94.2 & 93.3 & 92.9$^\star$ & 92.2 & 88.6 & — & — \\
+ & Infectious & 74.3 & 70.7 & 67.5$^\star$ & 68.2 & 64.2 & — & — \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- Runtime and Complexity ---
+\begin{table}[t]
+\centering
+\caption{Computational complexity of TCBG across datasets.}
+\label{tab:runtime}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Dataset} & \textbf{\#Graphs} & \textbf{\#Params} & \textbf{Train/fold (s)} & \textbf{Infer (ms/g)} & \textbf{GPU (MB)} \\
+\midrule
+Infectious & 200 & 9,893 & 2.31 & 0.129 & 57.2 \\
+DBLP & 755 & 36,165 & 25.63 & 0.105 & 87.9 \\
+Tumblr & 373 & 137,861 & 7.46 & 0.130 & 185.4 \\
+MIT & 97 & 36,165 & 2.95 & 0.226 & 69.9 \\
+Highschool & 180 & 36,165 & 3.96 & 0.143 & 105.6 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,39 @@
+# TCBG Traffic Network Configuration
+# Overrides for PEMS datasets
+
+T_grid: 24       # matches exactly 24 x 5-min steps per interval
+K_grid: 20
+epsilon_lookback: 3.0   # 3 x 5-min = 15-min lookback (guide Section 7.1)
+hom_dim: [0, 1]
+min_persistence: 0.01
+
+gin_layers: 3
+gin_hidden: 64
+gin_dropout: 0.3
+
+batch_size: 32
+epochs: 200
+patience: 30
+lr: 0.001
+
+# Evaluation: 5-fold stratified CV, seed=42
+eval_protocol: kfold
+n_splits: 5
+seed: 42
+
+# Run both binary AND 3-class for each dataset
+run_binary: true
+run_multiclass: true
+
+# Dataset-specific settings
+pems04:
+  num_timesteps: 24
+  node_feat_dim: 3  # flow, speed, occupancy
+
+pems08:
+  num_timesteps: 24
+  node_feat_dim: 3
+
+pemsbay:
+  num_timesteps: 24
+  node_feat_dim: 1  # speed only

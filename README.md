@@ -5,16 +5,6 @@ Temporal graph classification via 2-parameter persistence over (time, Forman-Ric
 This repo contains TCBG plus a unified fair-evaluation harness against two NeurIPS 2024 baselines — **T3Former** and **TempGNTK** — under one protocol: StratifiedKFold(5) × 10 seeds.
 
 
-## Why fair re-evaluation
-
-The published baselines use looser protocols:
-
-- **T3Former**: single `seed=42`, non-stratified KFold
-- **TempGNTK**: fixed 70/30 split, single run
-- **TCBG (ours)**: StratifiedKFold(5) × 10 seeds = 50 runs/dataset
-
-We re-ran each baseline's own published code under the TCBG protocol so the comparison is apples-to-apples.
-
 ## Install
 
 ```bash
